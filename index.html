@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">  <link rel="icon" href="./board/icon.png" type="image/x-icon">
+
+    <title>SEDF | Sindh Enterpise Development </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-LsU5gfvfV/GHwKY6r4FgM+Rz3rN6EhGJqFkCt4o3PCY5VwB1+G6b1Yd2o6K1e7u42hoT+lsMxWmv3v3Kznjmbuyw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  </head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed !important;">
+            <div class="container-fluid p-0 justify-content-around">
+              <a xlink:title="ww" class="navbar-brand" href="#">
+                <img src="./images/logo-sid.png" alt="">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item  dropdown"> 
+                      <a xlink:title="ww" class="nav-link  dropdown-toggle" href="./About_US/"  aria-expanded="false">
+                        Who We Are
+                      </a>
+                      <ul class="dropdown-menu" style="padding-right: none !important;">  
+                        <div class="d-sm-none d-md-flex" style="color: #8BC34A;">
+                            <div class="col-md-6 col-sm-12">
+                                <li><a xlink:title="ww" class="dropdown-item" href="./About_US/">About Us</a></li>
+                                <li><a xlink:title="ww" class="dropdown-item" href="./overview/">Overview</a></li>
+                                <li><a xlink:title="ww" class="dropdown-item" href="./careers/">Careers</a></li>
+                                <li><a xlink:title="ww" class="dropdown-item" href="./contact/">Contact</a></li>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <a xlink:title="ww" class="dropdown-item" href="./executive/" style="padding: 0; display: inline !important;content: none !important;">Our People</a>
+                                <ul class="dropdown-submenu" style="list-style-type: none; padding: 0; font-size: small;">
+                                    <li class="my-2"><a xlink:title="ww" href="./executive/">Management Team</a></li>
+                                    <li class="my-2"><a xlink:title="ww" href="./board/">Board of Directors</a></li>
+                                    <!-- <li class="my-2"><a xlink:title="ww" href="./development">Development Advisory Council</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>                  
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a xlink:title="ww" class="nav-link dropdown-toggle" href="./larkana/" role="button" aria-expanded="false">
+                      What We Do    
+                    </a>
+                    <ul class="dropdown-menu" style="padding-right: none !important;">  
+                      <div class="d-sm-none d-md-flex col-md-12" style="color: #8BC34A;">
+                          <div class="col-md-6 col-sm-12">
+                              <li style="border-bottom: none !important;">
+                                <a xlink:title="ww" style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Work</a>
+                                <ul class="sec" >
+                                  <li><a xlink:title="ww" href="./larkana/" class="dropdown-item">Regions</a></li>
+                                  <li><a xlink:title="ww" href="./hyderabad/" class="dropdown-item">Sectors</a></li>
+                                  <li><a xlink:title="ww" href="./initiate/" class="dropdown-item">Initiatives</a></li>
+                                </ul>
+                              
+                              </li>
+                     
+                          </div>
+                          <div class="col-md-6 col-sm-12 aa">
+                              <a xlink:title="ww" class="dropdown-item col-md-2" href="./active/" style="padding: 0; display: inline !important;">Active Projects</a>
+                              <a xlink:title="ww" href="" class="dropdown-item col-md-2" style="padding: 0; display: inline !important;">Investment Stories</a>                          
+                          </div>
+                      </div>
+                  </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a xlink:title="ww" class="nav-link dropdown-toggle" href="./debt" role="button"  aria-expanded="false">
+                      What We Offer
+                    </a>
+                    <ul class="dropdown-menu">  
+                      <div class="d-md-flex " style="color: #8BC34A; justify-content: space-evenly;">
+                        <div class="col-md-6">
+                          <li style="border-bottom: none !important;" >
+                            <a xlink:title="ww" style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="./debt/">Our Products</a>
+                            <ul class="sec"style="list-style-type:none ;  font-size: small !important; ">
+                              <li class="first">
+                                <a xlink:title="ww" href="./debt" data-drupal-link-system-path id="myPath"="node/166" class="dropdown-item">Institutional<br>Collaboration</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./credit/" data-drupal-link-system-path id="myPath"="node/161" class="dropdown-item">Credit Assistance</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./window/" data-drupal-link-system-path id="myPath"="node/5266" class="dropdown-item">One-Window Solution</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./funds/" data-drupal-link-system-path id="myPath"="node/1266" class="dropdown-item">Investment Funds</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./grants/" data-drupal-link-system-path id="myPath"="node/156" class="dropdown-item">Grants Funding</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./technical/" data-drupal-link-system-path id="myPath"="node/1266" class="dropdown-item">Technical Assistance</a>
+                            </li>
+                            
+                            </ul>
+                          
+                          </li>
+                        </div>
+                        <div class="col-md-6">
+                          <li style="border-bottom: none !important;" >
+                            <a xlink:title="ww" style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Work With us</a>
+                            <ul class="sec"style="list-style-type:none ;  font-size: small !important;">
+                              <li class="first">
+                                <a xlink:title="ww" href="/what-we-offer/our-products/debt-financing" data-drupal-link-system-path id="myPath"="node/166" class="dropdown-item">Where We Work</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="/what-we-offer/our-products/equity-investments" data-drupal-link-system-path id="myPath"="node/161" class="dropdown-item">Investment Policies</a>
+                            </li>
+                            <li class="first">
+                                <a xlink:title="ww" href="./eligibility/" data-drupal-link-system-path id="myPath"="node/5266" class="dropdown-item">Eligibility CheckList</a>
+                            </li>
+                            <li class="first">
+                              <a xlink:title="ww" href="./apply/" style="font-size: larger;
+                              font-weight: 100;
+                              text-align: center;" data-drupal-link-system-path id="myPath"="node/5266" class="dropdown-item">Apply</a>
+                          </li>
+                                                    
+                            </ul>
+                      
+                          </li>
+                        </div>
+                       </div>
+                    </ul>
+                  </li>
+                
+                  <li class="nav-item dropdown">
+                    <a xlink:title="ww" class="nav-link dropdown-toggle" href="./events/" role="button" aria-expanded="false">
+                      Events
+                    </a>
+                    <ul class="dropdown-menu" style="width:50% !important;">   
+                      <div class="d-md-flex" style="color: #8BC34A;">
+                        <div class="col-md-6" style="font-size: medium !important;">
+                          <li><a xlink:title="ww" class="dropdown-item" href="./events/">Events </a></li>
+                       
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- video -->
+        <header class="outer-container">
+          <div class="video-container">
+              <video src="./BMR scheme rice mills in sindh ( reviews inculded).mp4" autoplay loop muted></video>
+          </div>
+          <div class="overlay"></div>
+          <div class="scrolling-content col-md-5">
+              <h1 class="gradient-text reveal">Investing in Development</h1>
+              <h3 class="gradient-text1  reveal" style="margin-bottom: 2rem;">We're financing solutions to the most critical challenges facing the developing world today.</h3>
+              <a xlink:title="ww" class="my-4 le  reveal" href="./active/">Learn More</a>
+          </div>
+        </header>          
+        <!-- offer -->
+        <!-- <hr> -->
+        <section class="offer">
+            <div class="one" style="text-align: center;">
+                <div class="text-center my-4">
+                  <h1>What We Offer</h1>
+                </div>
+                <div class="d-lg-flex flex-wrap">
+                  <div class="col-md-2 my-3 animate-on-scroll1">
+                      <div>
+                        <img src="./images/debt.png" class="img-fluid" alt="">
+                      </div>
+                        <a xlink:title="ww" href="./debt/">Institutional<br>Collaboration</a>
+                    </div>
+                <div class="col-md-2 my-3 animate-on-scroll2">
+                      <div>
+                        <img src="./images/equity.png" class="img-fluid" alt="">
+                      </div>
+                      <a xlink:title="ww" href="./credit/">Credit<br> Assistance</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll3">
+                    <div>
+                      <img src="./images/funds.png" class="img-fluid" alt="">
+                    </div>
+                      <a xlink:title="ww" href="./window/">One-Window<br>Solution</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll4">
+                  <div>
+                    <img src="./images/political.png" class="img-fluid" alt="">
+                  </div>
+                    <a xlink:title="ww" href="./funds/">Investment<br> Funds</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll5">
+                <div>
+                  <img src="./images/study.png" class="img-fluid" alt="">
+                </div>
+                <a xlink:title="ww" href="./grants/">Grants <br>Funding</a>  
+                </div>
+                <div class="col-md-2 my-3 animate-on-scroll6">
+              <div>
+                <img src="./images/technical.png" class="img-fluid" alt="">
+              </div>
+              <a xlink:title="ww" href="./technical/">Technical<br> Assistance</a>
+              </div>
+              </div>
+           </div>
+        </section>
+        <!-- impact -->
+        <hr>
+        <section class="impact">
+          <div class="flex-wrap text-center">
+              <div class="zero">
+                <h1>SEDF'S Impact</h1>
+              </div>
+              <!-- <div class="col-md-12 justify-content-center align-items-center flex-wrap"> -->
+                <div class="col-md-12 justify-content-center  d-lg-flex  px-4">
+                  <div class="col-md-3 justify-content-center align-items-center my-1 ">
+                    <span class="count">115</span>
+                    <p>SEDF Projects</p>
+                  </div>
+                  <div class="col-md-3 justify-content-center align-items-center my-1">
+                    <span>Rs.<span class="count">8</span> bn</span>
+                    <p>Total Project Investement <br>in Sindh</p>
+                  </div>
+                  <div class="col-md-3 justify-content-center align-items-center my-1 ">
+                    <span><span class="count">2500</span> +</span>
+                    <p>Job Creation</p>
+                  </div>
+                </div>
+                <div class="col-md-12 justify-content-center align-items-center d-lg-flex px-4">
+                  <div class="col-md-3 justify-content-center align-items-center my-1">
+                    <span class="count">71</span>
+                    <p>Rice Husking Units</p>
+                  </div>
+                  <div class="col-md-3 justify-content-center align-items-center my-1">
+                  <span>Rs. <span class="count">600</span> Mn</span>
+                    <p>Subsidy</p>
+                  </div>
+                  <div class="col-md-3 justify-content-center align-items-center my-1">
+                    <span><span class="count">5,000</span> +</span>
+                    <p>Micro Loans</p>
+                  </div>
+                </div>
+                <div class="col-md-12 justify-content-center align-items-center d-lg-flex px-4 pb-2">
+                  <div class="col-md-3 justify-content-center align-items-center my-1">
+                    <span class="count">25</span>
+                    <p>Women Enterpreneurship</p>
+                  </div>
+                </div>
+              <!-- </div> -->
+             
+          </div>
+        </section>
+        <!-- priorities -->
+        <hr>
+        <section class="priority">
+          <div class="flex-wrap text-center" style="margin-top:3rem;">
+            <div>
+              <h1 class="gradient-text">Priorities <br> Sector</h1>
+            </div>
+            <div>
+              <div class="d-flex flex-wrap justify-content-center col-md-12">
+                <div class="food  animate-on-scroll1 my-3 col-md-2 mx-2 text-center align-items-center"  style="background: url(./images/agri.avif);">
+                  <h2 class="col-md-12"><a href="./priority/agri/">Agri-Processing</a></h2>
+                </div>
+                <div class="food  animate-on-scroll2 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/horti.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/horti/">Horticulture & Floriculture</a></h2>
+                </div>
+                <div class="food  animate-on-scroll3 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/dairy.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/dairy/">Dairy & Livestock</a>
+                  </h2>
+                </div>
+                <div class="food  animate-on-scroll4 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/poultry.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/poultry/">Poultry</a></h2>
+                </div>
+                <div class="food  animate-on-scroll5 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/aqua.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/aqua/">Aquaculture & Fisheries</a></h2>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="food  animate-on-scroll1 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/cold.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/coldchain/">Storage & Cold Chain</a></h2>
+                </div>
+                <div class="food  animate-on-scroll2 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/green.avif);">
+                  <h2 class="col-md-12"><a href="./priority/greenenergy/">Green Energy (Alternate Energy)</a></h2>
+                </div>
+                <div class="food  animate-on-scroll3 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/women.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/women/">Women Enterpreneurship</a></h2>
+                </div>
+                <div class="food  animate-on-scroll4 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/mining.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/mining/">Mining & Processing of Minerals</a></h2>
+                </div>
+                <div class="food  animate-on-scroll5 my-3 col-md-2 mx-2 text-center align-items-center" style="background: url(./images/innoc.jpg);">
+                  <h2 class="col-md-12"><a href="./priority/innnovation/">Innovation & Technology</a></h2>
+                </div>
+              </div>
+              <div>
+                <a xlink:title="" href="./active/">VIEW SEDF PROJECT DATA</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- slider -->
+        <hr>
+        <section class="slider">
+          <div class="d-flex flex-wrap">         
+            <div class="col-md-8 con">
+                    <div class="text-left">
+                      <h2>Cities in Sindh</h2>
+                    </div>
+                    <div id="karachi-content" class="slide-content">
+                      <h1>Karachi</h1>
+                      <h4>Geographical Position</h4>
+                      <p>to be provided</p>
+                      <a href="">For more info..</a>
+                      <div class="counter-container">
+                        <div class="counter col-md-2">
+                          <span class="number" id="gsdp">0</span>Bn
+                          <p>GSDP, Current price 
+                            (2021-22 est.)</p>
+                        </div>
+                        <div class="counter col-md-2">
+                          <span class="number" id="growthRate">0</span>%
+                          <p> Projected Growth Rate </p>
+                        </div>
+                        <div class="counter col-md-2">
+                          <span class="number" id="perCapitaIncome">0</span>
+                          <p>Per capita income,
+                            Current price (2021-22)                    
+                            </p>   
+                        </div>
+                        <div class="counter col-md-2">
+                          <span class="number" id="fdiInflows">0</span> Bn 
+                          <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="naushahro-Feroz" class="slide-content">
+                    <h1>Naushahro-Feroz</h1>
+                    <h4>Geographical Position:</h4>
+                    <p>District Naushahro Feroze lies in 67o 48” 2’ to 68o 26” 51’ east longitudes and 26o 32” 45’ to 27o 13” 36’ north latitudes. This district is bounded by district Khairpur on the east, district Larkana on the north, district Dadu on the west, and district Jamshoro and Shaheed Benazirabad on the south. Indus Rivers flows alongside the western boundary of the district.</p>
+                    <a href="./naushahro-Feroz/">For more info..</a>
+                    <div class="counter-container">
+                      <div class="counter col-md-2">
+                        <span class="number" id="gsdp">0</span>Bn
+                        <p>GSDP, Current price 
+                          (2021-22 est.)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="growthRate">0</span>%
+                        <p> Projected Growth Rate </p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="perCapitaIncome">0</span>
+                        <p>Per capita income,
+                          Current price (2021-22)                    
+                          </p>   
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="fdiInflows">0</span> Bn 
+                        <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                      </div>
+                    </div>
+                </div>
+                  <div id="hyderabad-content" class="slide-content">
+                    <h1>Hyderabad</h1>
+                    <h4>Geographical Position</h4>
+                    <p>Hyderabad city, south-central Sind province, southeastern Pakistan. It lies on the most northerly hill of the Ganjo Takkar ridge, just east of the Indus River. One of the largest cities in Pakistan, it is a communications centre, connected by rail with Peshawar and Karachi and with Indian railways via the border towns of Khokhropar and Munabao.</p>   
+                    <a href="./hyderabad/">For more info..</a>
+
+                    <div class="counter-container">
+                      <div class="counter col-md-2">
+                        <span class="number" id="gsdp-hyderabad">0</span>Bn
+                        <p>GSDP, Current price (2021-22 est.)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="growthRate-hyderabad">0</span>%
+                        <p>Projected Growth Rate</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                        <p>Per capita income, Current price (2021-22)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                        <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                      </div>
+                    </div>
+                  </div>          
+                  <div id="larkana-content" class="slide-content">
+                    <h1>Larkana</h1>
+                    <h4>Geographical Position</h4>
+                    <p>
+                      Larkana district is located in the Division of Larkano, Sindh, Pakistan. Positioned strategically in Sindh, Larkana is the second-largest city on the western bank of the Indus River, following Karachi. It is situated at approximately 27° 33' North latitude and 65° 16' East longitude. The city is located in upper Sindh, approximately 85 km southwest of Sukkur.
+                   </p>    
+                    <div class="counter-container">
+                      <div class="counter col-md-2">
+                        <span class="number" id="gsdp-larkana">0</span>Bn
+                        <p>GSDP, Current price (2021-22 est.)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="growthRate-larkana">0</span>%
+                        <p>Projected Growth Rate</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="perCapitaIncome-larkana">0</span>
+                        <p>Per capita income, Current price (2021-22)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="fdiInflows-larkana">0</span>Bn
+                        <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                      </div>
+                    </div>
+                  
+                  </div>
+                    <div id="sukkur-content" class="slide-content">
+                      <h1>Sukkur</h1>
+                      <h4>Geographical Position</h4>
+                  <p>District Sukkur is part of the Sukkur Division. This district is bounded by district Sukkur and India on the east, district Kashmore on the north, district Shikarpur on the north-west, and district Khairpur on the west and south. Indus River flows on the north-western side of this district. Sukkur is the narrowest part of the Indus River course.</p>
+                  <a href="./sukkur/">For more info..</a>
+
+                  <div class="counter-container">
+                      <div class="counter col-md-2">
+                        <span class="number" id="gsdp">0</span>Bn
+                        <p>GSDP, Current price 
+                          (2021-22 est.)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="growthRate">0</span>%
+                        <p> Projected Growth Rate </p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="perCapitaIncome">0</span>
+                        <p>Per capita income,
+                          Current price (2021-22)                    
+                          </p>   
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="fdiInflows">0</span> Bn 
+                        <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                      </div>
+                    </div>
+                    
+                    </div> 
+                  <div id="dadu-content" class="slide-content">
+                    <h1>Dadu</h1>
+                    <h4>Geographical Position</h4>
+                    <p>Dadu district was created in 1933 by the British Indian administration by merging Kotri and Kohistan tehsils from Karachi district and Mehar, Khairpur Nathan Shah, Dadu, Johi and Sehwan tehsils from Larkana district. The population of the district is 1,688,810 according to 1998 census report. The rural and urban population of the district constitutes 79% and 21% of the total population respectively.</p>
+                    <a href="./Dadu/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp">0</span>Bn
+                      <p>GSDP, Current price 
+                        (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate">0</span>%
+                      <p> Projected Growth Rate </p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome">0</span>
+                      <p>Per capita income,
+                        Current price (2021-22)                    
+                        </p>   
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows">0</span> Bn 
+                      <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                    </div>
+                  </div>
+              
+                </div> 
+                <div id="shikarpur-content" class="slide-content">
+                  <h1>Shikarpur</h1>
+                  <h4>Geographical Position</h4>
+                  <p>
+                    Shikarpur district is located in the Division of Larkano, Sindh, Pakistan. The district is situated around 18 miles from the right bank of the Indus in Larkana division with the 1.23 million population. Shikarpur district borders meet with Larkana, Jacobabad, Khairpur Mir, Sukkur and Katcha area touches with Ghotki district. The two national highways N-65 and N-55 intersect the city of Shikarpur making it the junction points of four provinces.                  </p>            
+
+                <div class="counter-container">
+                  <div class="counter col-md-2">
+                    <span class="number" id="gsdp">0</span>Bn
+                    <p>GSDP, Current price 
+                      (2021-22 est.)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="growthRate">0</span>%
+                    <p> Projected Growth Rate </p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="perCapitaIncome">0</span>
+                    <p>Per capita income,
+                      Current price (2021-22)                    
+                      </p>   
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="fdiInflows">0</span> Bn 
+                    <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                  </div>
+                </div>
+            
+               </div> 
+               <div id="Khairpur-content" class="slide-content">
+                <h1>Khairpur</h1>
+                <h4>Geographical Position</h4>
+                <p>District Khairpur is part of the Khairpur Mir’s Division. Khairpur district is located in north-eastern Sindh and is bounded on the north by Shikarpur and Khairpur Mir’s, on the east by India, on the south by Sanghar and Shaheed Benazirabad and on the west by Larkana and Naushahro Feroz. The district lies from 68° 10’ to 70° 10’ east longitude and 26° 9’ to 27° 42’ north Latitude.</p>
+            
+                <a href="./Khairpur_mir/">For more info..</a>
+                <div class="counter-container">
+                <div class="counter col-md-2">
+                  <span class="number" id="gsdp">0</span>Bn
+                  <p>GSDP, Current price 
+                    (2021-22 est.)</p>
+                </div>
+                <div class="counter col-md-2">
+                  <span class="number" id="growthRate">0</span>%
+                  <p> Projected Growth Rate </p>
+                </div>
+                <div class="counter col-md-2">
+                  <span class="number" id="perCapitaIncome">0</span>
+                  <p>Per capita income,
+                    Current price (2021-22)                    
+                    </p>   
+                </div>
+                <div class="counter col-md-2">
+                  <span class="number" id="fdiInflows">0</span> Bn 
+                  <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                </div>
+              </div>
+           
+                       </div> 
+              <div id="ghotki-content" class="slide-content">
+                <h1>Ghotki</h1>
+                <h4>Geographical Position</h4>
+                <p>District Ghotki is part of the Sukkur Division. Mirpur Mathelo is the Head Quarter of Ghotki District. The town is located at 28°]'0N 69°] 9’0E with an altitude of 72 meters (239 ft). Pano Aqil army cantonment is also near Ghotki city but in Sukkur District. Ghotki district is spread over an area of 6,506 square kms. The length is 50 miles from east to west and breadth is about 60 miles. Ghotki city is situated near National Highway along with railway line which crosses from the center of the city.</p>
+                      <!-- <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…                  </p> -->
+                      <a href="./ghotki/">For more info..</a>
+
+                      <div class="counter-container">
+                      <div class="counter col-md-2">
+                        <span class="number" id="gsdp">0</span>Bn
+                        <p>GSDP, Current price 
+                          (2021-22 est.)</p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="growthRate">0</span>%
+                        <p> Projected Growth Rate </p>
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="perCapitaIncome">0</span>
+                        <p>Per capita income,
+                          Current price (2021-22)                    
+                          </p>   
+                      </div>
+                      <div class="counter col-md-2">
+                        <span class="number" id="fdiInflows">0</span> Bn 
+                        <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                      </div>
+                    </div>
+          
+                      </div> 
+                <div id="badin-content" class="slide-content">
+                  <h1>Badin</h1>
+                  <h4>Geographical Position</h4>
+                  <p>It lies east of the Indus River. The region is swampy, fertile for growing rice. Badin District is bounded on the north by Hyderabad District on the east by Mirpurkhas and Tharparkar districts, on the south the Arabian Sea and Rann of Kutch, which also forms part of the disputed boundary with India, and on the west, it is bounded by Thatta and Hyderabad districts.</p>
+                  <a href="./badin/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div> 
+                <div id="sanghar-content" class="slide-content">
+                  <h1>Sanghar</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Sanghar is part of the Shaheed Benazirabad Division. This district is bounded by Indian state of Rajhistan on the east, district Khairpur and Shaheed Benazirabad on the north, district Matiari and Tando Allahyar on the west, and district Umerkot and Mirpur Khas on the south. Indus River flows on the western side of this district, in the vicinity of district Matiari.</p>            
+                  <a href="./sanghar/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>   
+                <div id="Allahyar-content" class="slide-content">
+                  <h1>Tando Allahyar</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Tando Allahyar lies in 68° 34’ 23” to 68° 57’ 35” east longitudes and 25° 12’ 24” to 25° 45’ 17” north latitudes. This district is bounded by district Mirpur Khas on the east, district Sanghar on the north, district Hyderabad and Matiari on the west and district Tando Muhammad Khan & Badin on the south.</p>                  
+                  <a href="./tando-Allahyar/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div> 
+                <div id="tando-content" class="slide-content">
+                  <h1>Tando Muhammad Khan</h1>
+                  <h4>Geographical Position</h4>
+                  <p>The district Tando Muhammad Khan is named after its establisher Mir Muhammad Khan Talpur in 1791. Tando Muhammad Khan remained the reminiscent town of Sehwani Talpurs. In October 2005 this became separate district of Hyderabad city. Tando Muhammad khan is located in the south of Sindh province. The district is located at the distance of 35 km from Hyderabad.</p>
+                  <a href="./tando-muhammadkhan/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>  
+                <div id="sujawal-content" class="slide-content">
+                  <h1>Sujawal</h1>
+                  <h4>Geographical Position</h4>
+                  <p>The district Tando Muhammad Khan is named after its establisher Mir Muhammad Khan Talpur in 1791. Tando Muhammad Khan remained the reminiscent town of Sehwani Talpurs. In October 2005 this became separate district of Hyderabad city. Tando Muhammad khan is located in the south of Sindh province. The district is located at the distance of 35 km from Hyderabad.</p>
+                  <a href="./sujawal/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div> 
+                <div id="matiari-content" class="slide-content">
+                  <h1>Matiari</h1>
+                  <h4>Geographical Position</h4>
+                  <p>The district lies in 68 degree 14” 8’ to 68 degree 14” 40’ east longitudes to 25 degree 26” 20’ to 26 degree 5” 43’ north latitudes. The district is bounded by district Saanghar on the east, district Jamshoro on the west, district Shaheed Benazirabad on the north and district Hyderabad and Tando Allahyar on the south.</p>
+                  <a href="./matiari/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>  
+                <div id="jamshoro-content" class="slide-content">
+                  <h1>Jamshoro</h1>
+                  <h4>Geographical Position</h4>
+                  <p>Jamshoro district is located in the Division of Hyderabad, Sindh, Pakistan. Jamshoro is essentially the gate-way to the Indus Valley. It has a famous and rich cultural heritage. Jamshoro is 18 kms from Northwest to the city of Hyderabad and 150 kms Northwest from Karachi city.</p>
+                  <a href="./jamshoro/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="mirpur-content" class="slide-content">
+                  <h1>Mirpurkhas</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Mirpur Khas lies in 68 ° 59’ 3” to 69 ° 16’ 53” east longitudes and 24 ° 48’ 33” to 25 ° 48’ 7” north latitudes. This district is bounded by district Umerkot on the east, district Sanghar on the north, district Tando Allahyar on the west, district Badin on the south-west and district Tharparkar & Badin on the south.</p>
+                  <a href="./mirpurkhas/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>  
+                <div id="thatta-content" class="slide-content">
+                  <h1>Thatta</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Mirpur Khas lies in 68 ° 59’ 3” to 69 ° 16’ 53” east longitudes and 24 ° 48’ 33” to 25 ° 48’ 7” north latitudes. This district is bounded by district Umerkot on the east, district Sanghar on the north, district Tando Allahyar on the west, district Badin on the south-west and district Tharparkar & Badin on the south.</p>
+                  <a href="./mirpurkhas/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>  
+                <div id="kambar-content" class="slide-content">
+                  <h1>Kambar Shahadkot</h1>
+                  <h4>Geographical Position</h4>
+                  <p>
+                    District Kamber Shahdadkot is situated in the northwest of Sindh province. The district borders with Khuzdar, Ja-erabad and Jhal Magsi districts of the Baluchistan province in the west, Dadu in the South, Larkana in the east and Jacobabad in the north. Mohenjo-Daro is only 47 Kilometers away from the district.
+                  </p>                     <a href="./kambar/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>     
+                <div id="umer-content" class="slide-content">
+                  <h1>Umerkot</h1>
+                  <h4>Geographical Position</h4>
+                  <p>Umerkot District is situated in Tharparkar, Sind, Pakistan, its geographical coordinates are 25° 22' 0" North, 69° 44' 0" East and its original name (with diacritics) is Umerkot. The historical town is in the southeastern Sindh. It is largely known for its gigantic historical fort and being the birthplace of Mughal emperor Akbar the Great, the location of which is marked by a monument.</p>
+                  <a href="./umerkot/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div> 
+                <div id="thar-content" class="slide-content">
+                  <h1>Tharparkar</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Tharparkar lies in 69o 3” 35’ to 71o 7” 47’ east longitudes and 24o 9’ 35” to 25o 43’ 6” north latitudes. This district is bounded by India on the East, Rann of Kutch on the South, district Umerkot on the north and district Badin and Mirpurkhas on the west.</p>
+                  <a href="./tharparkar/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="kashmore-content" class="slide-content">
+                  <h1>Kashmore Kandhkot</h1>
+                  <h4>Geographical Position</h4>
+                  <p>
+                    District Kashmore-Kandhkot is part of the Larkano Division. District Kashmore-Kandhkot is situated in upper Sindh. Its eastern borders touch district Rajanpur of Punjab by crossing Guddu Barrage and its northern borders touch district Sibi of Baluchistan. The District Jacobabad and Shikarpur are Located in its west. Its southern side meets with River Indus and District Ghotki.                  </p>            
+
+                  <a href="./kashmore/">For more info..</a>
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>  
+                <div id="jacob-content" class="slide-content">
+                  <h1>Jacobabad</h1>
+                  <h4>Geographical Position</h4>
+                  <p>Jacobabad district is located in the Division of Larkano, Sindh, Pakistan. The location of Jacobabad proper can be explained as 44 K.M North West of Sukkur. It is situated between 68.26 longitude and 28.17' latitude. This District was sometime also called (U.S.F) Upper Sindh Frontier District. In addition to its common folks also call it only (the northern) and some other time as (Siro) or the upper part.</p>
+                  <a href="./jacobabad/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>        
+                <div id="benazir-content" class="slide-content">
+                  <h1>Shaheed Benazirabad</h1>
+                  <h4>Geographical Position</h4>
+                  <p>District Shaheed Benazirabad (SBA) is part of the Shaheed Benazirabad Division. The district lies in 67° 52” to 68° 27” 2’ east longitudes to 25° 59” to 26° 38” 5’ north latitudes. The district is bounded by district Khairpur and Saanghar on the east, district Jamshoro on the west, district Khairpur and Naushehro Feroze on the north and district Matiari on the south.</p>
+                  <a href="./jacobabad/">For more info..</a>
+
+                  <div class="counter-container">
+                    <div class="counter col-md-2">
+                      <span class="number" id="gsdp-hyderabad">0</span>Bn
+                      <p>GSDP, Current price (2021-22 est.)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="growthRate-hyderabad">0</span>%
+                      <p>Projected Growth Rate</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                      <p>Per capita income, Current price (2021-22)</p>
+                    </div>
+                    <div class="counter col-md-2">
+                      <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                      <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                    </div>
+                  </div>
+                </div>    
+                      
+                  
+                
+            </div>
+
+            <div class="mapdiv col-md-4">
+              <div class="svg-container">
+                  <svg width="2739" height="3313" viewBox="0 0 2739 3313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <a xlink:title="Jamshoro">
+                        <path id="myPath"  onclick="showContent('jamshoro-content')" d="M680 1265L617 1304.5L586 1321L536 1331.5L544.5 1376.5L553.5 1396L513 1418.5L541.5 1454.5L513 1495.5L474 1475.5L459.5 1527.5V1571.5L447.5 1622L415.5 1634H381.5L355.5 1658V1690L341.5 1758L355.5 1822V1866L323.5 1900.5L296.5 1972L315.5 1986.5L355.5 2042L341.5 2062.5L333 2082.5L323.5 2163L296.5 2192.5L279.5 2223L249.5 2263L279.5 2295L307 2323L355.5 2350.5L394 2379L411.5 2406L423 2439.5L434.5 2473L464 2452L537 2395.5L569.5 2379L594 2360L626.5 2337L654 2263L668.5 2235.5L688 2207L719.5 2135H738.5L786.5 2116.5L858.5 2201H970.5V2179L944.5 2126.5L976.5 2066H990.5L1032 2043.5L1005 1996L1039.5 1975.5L1050 1953.5L1032 1928.5H990.5L958.5 1882.5L976.5 1866L958.5 1822L936.5 1806L918.5 1758V1734H898.5L858.5 1720L786.5 1622L758.5 1571.5L712 1527.5V1475.5V1437.5L738.5 1396V1387.5L717.5 1339L680 1349L656 1304.5L680 1265Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(567.25 1873.75)">
+                          <circle cx="0" cy="0" r="80" fill="WHITE" opacity="0.4" /> 
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                      </g>
+                      </a>  
+                      <a xlink:title="Naushahro Feroze" onclick="showContent('naushahro-Feroz')">
+                        <path id="myPath" d="M824.5 974.5V959.5V944.5L817 931V908.5V890.5L836.5 884H865H881.5L896.5 890.5H918.5L956.5 900.5L986.5 908.5L1001 944.5L1039 970L1045 988.5V1026.5L1024 1054.5L986.5 1100.5L966.5 1135V1167L956.5 1211V1243V1275L966.5 1291L896.5 1303V1337H860.5L824.5 1321H770.5L731 1329L684 1348L672 1337L660 1303L672 1268L692 1255V1223L672 1187L692 1167L672 1133L692 1100.5V1080.5L702 1063.5L716 1054.5V1042.5L746.5 1026.5L763 1054.5L770.5 1080.5L784.5 1054.5L804.5 1006.5H824.5V974.5Z" fill="#D9D9D9"/>
+                        <g transform="translate(906 1119.75)">
+                        
+                          <circle cx="0" cy="0" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                        </g>
+                      </a>                   
+                      <a xlink:title="Shaheed Benazirabad" onclick="showContent('benazir-content')">
+                        <path id="myPath" d="M711 1438.5L741 1392L716 1338L757 1321H782.5H822.5L859 1338H897V1302.5L929 1297L955.5 1291L976.5 1287.5H1013.5L1070 1305H1131L1192 1318.5L1273 1338L1319 1353L1334 1410L1347 1427.5L1273 1499.5H1242.5L1218.5 1510.5L1192 1523.5L1179 1536.5L1192 1558.5L1179 1597.5H1131V1571.5L1070 1558.5V1571.5L1046 1597.5L1059 1624L1070 1645.5L1059 1696L1039.5 1681L1015.5 1676.5H998.5L987 1690L955 1709.5L926.5 1735.5L891.5 1731L860.5 1719.5L812.5 1658.5L774.5 1597.5L760.5 1571.5L735.5 1547.5L711 1527V1438.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1029 1537)">
+                        
+                          <circle cx="0" cy="0" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Matiari " onclick="showContent('matiari-content')"> 
+                        <path id="myPath" d="M1130 1691.5L1124.5 1684H1094L1079.5 1671.5L1052.5 1691.5L1030.5 1678.5H1013.5H998L987 1691.5L956.5 1711L943.5 1722.5L920 1735V1760.5L935 1804L956.5 1819L966.5 1837.5L978 1867.5L960.5 1883.5L989 1926L1030.5 1929.5L1052.5 1951L1041.5 1973L998 1999L1013.5 2025.5L1035 2049.5L1059.5 2079.5H1096.5L1131.5 2096L1151 2091H1180L1201 2079.5H1221.5L1218.5 2049.5L1201 2025.5L1221.5 1986L1218.5 1948.5H1201L1166 1929.5L1151 1903L1124.5 1864L1094 1832.5V1809.5L1075 1793L1079.5 1767.5L1103.5 1735V1711L1130 1691.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1149 1891.25)">
+                        
+                          <circle cx="-60" cy="0" r="50" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="-60" cy="0" r="10" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Hyderabad" onclick="showContent('hyderabad-content')">
+                        <path id="myPath" d="M1041.5 2060.5H1015.5L989.5 2069H976L965.5 2093L945.5 2121.5L965.5 2187L989.5 2254.5L1015.5 2283L1078.5 2300.5H1096L1122.5 2283H1159.5V2254.5L1190 2246L1179 2215L1159.5 2187V2158.5H1179L1159.5 2121.5L1122.5 2093L1096 2080H1078.5H1059L1041.5 2060.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1083 2180.5)">
+                        
+                          <circle cx="0" cy="0" r="50" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Kambar Shahadkot" onclick="showContent('kambar-content')" >
+                        <path id="myPath" d="M801.5 358L833 413.5L860.5 427.5L882.5 441.5V481.5V511.5V535.5L844.5 567.5L826.5 559.5L818.5 591.5V618L801.5 662L776.5 690L758.5 724L742.5 736L758.5 754L776.5 774L758.5 792L742.5 814V838L701.25 830L660 822H638L556 814H528H510H490H449.5H411.5L363.5 792L321.5 774H289.5L199 736V706V662L227.5 636L249.5 567.5L289.5 535.5L321.5 481.5L339.5 427.5L389.5 413.5H449.5L490 393.5L510 413.5L542 393.5H578L610 379.5L628 358H660H718H742.5H801.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(616 598)">
+                        
+                          <circle cx="0" cy="0" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                        </g>
+                      </a>    
+                      <a xlink:title="Larkana" onclick="showContent('larkana-content')">
+                        <path id="myPath" d="M863.5 431.5L828.5 403.5H870.5H906.5H924.5L938.5 431.5L961 465.5L998 527.5L1016.5 520.5L1001.5 549L1009 567.5L1045 549V598L1009 620L985 625.5V646.5V676L961 694.5L938.5 711V737L967.5 774.5V800H906.5L898.5 816L890.5 828L870.5 856.5L865.5 884L828.5 890.5H816.5V914.5V944.5L766.5 914.5L732 890.5V864.5V846L752.5 828L745 810.5L766.5 784.5L788.5 762H766.5L745 737L759.5 721L780 682.5L806.5 660V640L816.5 620V588.5L828.5 559.5L844.5 567.5L865.5 554.5L870.5 544.5L882 527.5V497.5V471.5V452.5L863.5 431.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(898.5 651.75)">
+                        
+                          <circle cx="0" cy="0" r="60" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Dadu" onclick="showContent('dadu-content')">
+                        <path id="myPath" d="M217 738H193L183 762L167 806L155 846L161 878.5L183 934.5L167 986.5L171 1022.5V1054.5L155 1102.5L171 1163V1207L155 1235L171 1319L203 1389.5L233.5 1433.5L257.5 1477.5L287.5 1525.5L317.5 1593.5L345.5 1622L360.5 1652L386.5 1632H403.5H425.5L451.5 1622L458 1565.5V1525.5L473.5 1477.5L510 1495.5L540 1457.5L510 1421.5L552 1399.5L540 1375.5V1331L582 1319L628 1301L688 1259.5V1220L674 1191.5L694 1168L674 1139L688 1102.5V1091.5L698 1069L712 1054.5V1046.5L730 1032.5L746.5 1022.5L758.5 1044.5L771.5 1078.5L780.5 1054.5L798.5 1022.5L764.5 998.5L798.5 1006.5H823L828.5 976.5V951L816.5 944L798.5 933.5L764.5 906.5L749.5 900.5L728.5 886V861L736.5 837L674 818H619H585L547 811.5H502H467L439.5 818L403.5 806L378 797.5L345.5 778L317.5 770L287.5 778L244.5 750.5L217 738Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(430 1180.5)">
+                        
+                          <circle cx="0" cy="0" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="0" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Sukkur" onclick="showContent('sukkur-content')">
+                        <path id="myPath" d="M1538 347L1505 341L1483 373.5L1474 390L1441.5 403L1401 416L1384 441H1376.5L1384 469L1352.5 481.5L1330.5 510.5H1287.5H1265.5L1238 497.5L1227 534L1205 548L1227 561.5H1257.5H1301.5L1326 580L1330.5 607.5L1318 629.5L1301.5 648V682.5H1326L1330.5 703L1360.5 708.5L1352.5 725L1344 739L1360.5 748.5L1344 780L1326 799.5V827L1352.5 849L1384 868L1420 893H1483H1520L1567 904L1603.5 913.5L1641.5 923L1702 951L1735 964.5L1769.5 973L1802.5 992L1820 964.5L1843.5 923L1857.5 904L1891.5 868L1918 842L1934.5 827L1959 814.5L1948 799.5L1926 780H1900L1874 766.5L1843.5 748.5L1857.5 732V708.5H1802.5L1744.5 697.5L1702 682.5H1667.5L1641.5 648L1622 629.5L1603.5 607.5L1585 589.5L1567 580L1573.5 561.5L1585 548H1610.5L1622 534L1610.5 520.5L1622 497.5L1610.5 481.5L1585 443.5L1573.5 403L1556.5 373.5L1538 347Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1538 347)">
+                          <circle cx="0" cy="400" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="0" cy="400" r="20" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Ghotki" onclick="showContent('ghotki-content')" >
+                        <path id="myPath" d="M1587.5 348L1556.5 357L1575 394.5L1587.5 438L1612 489L1624.5 511V549.5H1587.5L1567 562L1587.5 602.5L1624.5 638L1658.5 670.5L1711.5 686L1764 701.5H1811L1865 715.5L1854 745L1890 770L1935 791.5L1966 801L2015.5 770L2053 731L2073 692.5L2129 656.5L2166 602.5L2189.5 549.5L2217.5 489L2234.5 464.5L2245.5 452L2234.5 438L2217.5 428.5L2178.5 416L2149 394.5L2115 376L2091.5 332.5L2062 304.5L2036 275L2015.5 220.5V177L2004.5 149.5L1984.5 140H1966L1953.5 149.5H1925.5L1904 126L1890 101H1865H1854L1846.5 85.5L1838.5 75L1828 93.5L1838.5 126L1857.5 149.5V166.5V199L1865 233L1846.5 248.5L1838.5 275H1818.5H1811L1818.5 251.5L1811 233V211.5L1790.5 186.5L1775 177L1764 197.5L1775 220.5L1790.5 233L1801.5 248.5L1790.5 262.5H1775L1750.5 275H1730L1717.5 262.5V275L1742.5 304.5V318.5L1717.5 332.5L1676 318.5V304.5V289H1658.5L1648 304.5L1637 289H1624.5H1612L1601.5 304.5V332.5L1587.5 348Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1587.5 348)">
+                          <circle cx="250" cy="100" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="250" cy="100" r="20" fill="WHITE" />
+                          <!-- You can add more circles with appropriate cx, cy, and r values based on your path data -->
+                      </g>
+                      </a>
+                      <a xlink:title="Shikarpur" onclick="showContent('shikarpur-content')">
+                        <path id="myPath" d="M1429 298.5H1384L1360 303.5L1334.5 298.5L1305 286L1272.5 272L1246.5 265.5L1213 254L1189 244.5H1162.5L1133.5 235.5H1114H1097L1076.5 244.5L1062.5 254L1036 265.5H1011H983.5L974 272L965 298.5L958 334.5V368.5V389.5L945.5 399.5H924.5V410L932.5 426L945.5 439L958 460.5L974 483.5L983.5 497.5L994.5 522.5H1017.5L1001.5 547L1011 566.5L1024.5 559.5L1043 547L1062.5 559.5L1076.5 547L1105 535.5L1133.5 547L1146.5 535.5H1183H1220L1233.5 522.5V513.5V483.5L1246.5 497.5L1282 506.5L1305 497.5L1315 506.5H1334.5L1346 483.5L1363.5 468.5L1384 460.5L1374 439L1392 426L1400 410L1442.5 399.5L1472.5 389.5L1478.5 368.5L1502.5 348L1490 327.5L1472.5 308L1429 298.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1429 298.5)">
+                          <circle cx="-250" cy="100" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="-250" cy="100" r="20" fill="WHITE" />
+                          <!-- You can add more circles with appropriate cx, cy, and r values based on your path data -->
+                      </g>
+                      </a>
+                      <a xlink:title="Jacobabad" onclick="showContent('jacob-content')">
+                        <path id="myPath" d="M1312 56.5H1401.5V72.5V142.5L1387.5 164.5L1382 188.5V224V257.5L1387.5 292L1364.5 302H1344.5L1312 286L1265 274.5L1227 257.5L1155.5 240L1116.5 231L1081 240L1057 257.5L1032.5 263H976.5L966.5 297.5L960.5 336.5V347L953.5 393L926 401.5H882H826.5L802 358H778.5H747L728 347L738.5 317L749 292L779 274.5L814.5 240L882 188.5L926 166.5L976.5 157.5L1011 136.5L1032.5 92L1045.5 72.5L1073 56.5H1143H1214H1312Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1312 56.5)">
+                          <circle cx="-50" cy="100" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="-50" cy="100" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Kashmore Kandhkot" onclick="showContent('kashmore-content')">
+                        <path id="myPath" d="M1401 141V57.5L1463.5 49.5L1487 38L1511.5 26L1528 14.5L1548.5 8.5L1569 26H1601.5L1635.5 31H1684H1731L1752.5 14.5L1784 1H1817L1863 8.5H1891L1883.5 26L1897 38H1918.5H1946L1975 49.5L1984 60.5L2008 76L2028 88.5L2034.5 122L2014 139.5H1993.5L1963.5 149H1946H1927L1897 114L1891 97.5H1870.5H1863H1854L1870.5 122L1883.5 139.5L1891 186V204L1883.5 228L1863 245V270L1854 282L1840.5 270V254.5L1844.5 231L1840.5 211.5L1817 186L1795.5 166.5V186L1802.5 211.5L1817 228L1823 245L1817 264.5H1784H1771H1760.5L1752.5 270L1760.5 287.5L1771 308L1760.5 331.5H1731H1712.5L1684 321H1674.5L1666.5 296.5L1656 287.5L1650 302L1635.5 296.5L1628.5 308V321V340.5L1601.5 348L1579 358H1548.5L1530.5 348L1500.5 340.5L1474.5 308L1452 302L1428.5 296.5H1384V282L1381 254.5L1384 235L1381 199.5V169L1401 141Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1401 141)">
+                          <circle cx="200" cy="50" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="200" cy="50" r="20" fill="WHITE" />
+                          <!-- Add more circleswith appropriate cx, cy, and r values based on your path data -->
+                      </g>
+                      </a>
+                      <a xlink:title="Khairpur Mir" onclick="showContent('Khairpur-content')">
+                        <path id="myPath" d="M1049 593.5L1043 550L1065 562L1076 550L1106 538.5L1137 550L1147 538.5H1175.5H1194.5L1206 550L1226.5 562H1236.5H1255H1274.5H1299.5L1325 579.5L1329 609L1311 639H1297.5V678.5L1321.5 690L1337.5 707H1358.5L1351 736.5L1358.5 748L1337.5 787.5L1321.5 814V826.5L1351 840.5L1376.5 866L1412.5 890.5H1482.5L1541.5 899.5L1589 913.5L1638 924L1687 944L1716.5 955L1761 970.5L1799 994V1014.5L1791.5 1067.5L1775.5 1139V1192.5L1809.5 1234L1874.5 1259L1932.5 1283L1971 1302L1998 1323H2033.5L2073.5 1337.5L2135.5 1323H2171.5L2213 1337.5L2236.5 1351L2248.5 1377.5V1413.5V1438.5V1475.5V1507L2236.5 1536.5V1563V1600L2222 1630H2204H2183L2150.5 1618L2121 1609L2097 1600H2063H2033.5H1971H1932.5H1866H1809.5H1736.5L1695 1581H1634.5H1581H1533.5L1486 1567.5L1471 1560L1462.5 1535L1440 1517L1418 1496.5L1404.5 1487.5L1392.5 1456.5L1367.5 1417.5H1351H1334.5V1382L1321.5 1349L1263.5 1325.5L1203 1317.5L1125.5 1304.5L1028 1287.5H974L957 1278V1241.5L965 1179.5L974 1120.5L1019 1064L1049 1032V994L1040 970.5L1000.5 944L984.5 915L957 899.5L909.5 886L869 879.5L879.5 852L892.5 825.5L909.5 802H929.5H966V778.5L957 762.5L936 736.5V714L966 690L984.5 678.5V654.5V626L1010 620L1032 609L1043 602.5L1049 593.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1049 593.5)">
+                          <circle cx="300" cy="500" r="80" fill="WHITE" opacity="0.4" />
+                         
+                          <circle cx="300" cy="500" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Karachi" onclick="showContent('karachi-content')">
+                        <path id="myPath" d="M267.5 2009L299 1973.5L330.5 2009L354 2040.5L330.5 2087.5V2146.5L267.5 2244.5V2284L299 2315L401 2386L444.5 2511.5L464 2554.5L401 2535H354L330.5 2574.5L267.5 2554.5L189 2535H110.5V2574.5L71.5 2554.5L32 2535L0.5 2499.5V2417.5L32 2386L71.5 2339V2284L110.5 2244.5L150 2197.5L181.5 2146.5L189 2127L209 2087.5V2040.5H244L267.5 2009Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(267.5 2009)">
+                          <circle cx="-70" cy="300" r="80" fill="WHITE" opacity="0.4" />
+                          <!-- Larger centra dot -->
+                          <circle cx="-70" cy="300" r="20" fill="WHITE" />
+                        </g>
+                      </a>
+                      <a xlink:title="Thatta" onclick="showContent('thatta-content')">
+                        <path id="myPath" d="M220.5 2751L189 2684.5V2633L205 2617.5L244 2582H275.5H303L337 2566.5L358 2532.5H401.5L464 2554.5L443 2507.5L433.5 2475L530.5 2405.5L566 2382L629 2335L660.5 2248.5L691.5 2205.5L715 2142.5L770 2123L785.5 2117L833 2172L856 2200L969 2202.5L989 2254.5L1007.5 2276L972.5 2270V2330.5L944.5 2337.5L919.5 2382L943 2429L919.5 2452.5L888 2429L841 2452.5V2507.5L823 2532.5L787.5 2598.5L761.5 2631L731 2677.5V2706.5V2723.5L721.5 2758L707 2782.5V2817.5H660.5L629 2865L609 2914L585 2946H552.5L527 2930L480 2962.5L443 3007.5L433.5 3036.5V3107L388.5 3152L326.5 3069L244 2900V2817.5L220.5 2751Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(220.5 2751)">
+                          <circle cx="250" cy="-50" r="80" fill="WHITE" opacity="0.4" />
+                          <!-- Larger centra dot -->
+                          <circle cx="250" cy="-50" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Sujawal" onclick="showContent('sujawal-content')">
+                        <path id="myPath" d="M441 3198L406 3174V3135L428.5 3111V3070L441 3033V3009.5L480.5 2962L529 2933L547 2947H582L610 2911L637.5 2861L660 2817H704L708 2781.5L731.5 2734.5V2707V2679.5L778.5 2609L842.5 2504.5V2457.5L881 2430.5L951.5 2444V2491V2530.5L965.5 2584.5L1018.5 2644V2707L1047.5 2767V2817L1129.5 2846.5H1187H1246L1250 2962V3092L1187 3135H1030L951.5 3174L881 3198L853.5 3260.5L778.5 3311.5L676.5 3260.5L621.5 3233H512H480.5L441 3198Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(820.5 3051)">
+                          <circle cx="50" cy="-50" r="80" fill="WHITE" opacity="0.4" />
+                          <!-- Larger centra dot -->
+                          <circle cx="50" cy="-50" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Tando Muhammad Khan" onclick="showContent('tando-content')">
+                        <path id="myPath" d="M968 2589.5L954 2532V2499.5V2476V2445L931 2410L918.5 2380.5L944.5 2338L974 2331V2271L1002 2276H1037H1092H1139L1166.5 2244.5L1182.5 2229L1202 2213H1257L1227.5 2271L1187.5 2285.5V2309V2331V2377L1217 2395.5L1257 2417.5L1278 2435.5L1290 2476V2489.5L1300 2513L1263 2532H1240.5L1217 2525L1198.5 2513L1166.5 2508.5H1139H1092L1064.5 2519.5L1043 2547L968 2589.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(700.5 2405.5)" >
+                          <!-- Circle with radius 80 -->
+                          <circle cx="400" cy="00" r="50" fill="WHITE" opacity="0.4" />
+              
+                          <!-- Larger central dot -->
+                          <circle cx="400" cy="00" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Badin" onclick="showContent('badin-content')">    
+                  
+                        <path id="myPath" d="M1025.5 2715.5V2660.5V2613.5L1033 2566.5L1053 2535L1088 2511.5H1123.5H1190L1229.5 2535H1265L1300 2511.5L1280.5 2437L1190 2378V2315V2284L1229.5 2268L1249 2244.5L1300 2248.5L1331.5 2244.5L1382.5 2221H1422V2284L1453.5 2315L1500.5 2346.5L1555.5 2378L1579 2437H1618L1665.5 2464.5V2511.5V2547V2590H1638L1618 2613.5V2660.5L1579 2715.5V2735.5L1555.5 2766.5L1520 2810V2872.5V2935.5H1477H1422L1382.5 2892.5V2935.5H1355L1331.5 2892.5H1280.5L1249 2841.5H1190H1123.5L1053 2810V2766.5L1025.5 2715.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(925.5 2315.5)" >
+                          <!-- Circle with radius 80 -->
+                          <circle cx="400" cy="300" r="80" fill="WHITE" opacity="0.4" />
+              
+                          <!-- Larger central dot -->
+                          <circle cx="400" cy="300" r="20" fill="WHITE" />
+                      </g>
+                      </a>
+                      <a xlink:title="Tando Allayar" onclick="showContent('Allahyar-content')">
+                        <path id="myPath" d="M1223 1933L1202 1947H1218.5L1221 1970V1986L1211.5 2010V2029L1221 2060V2081C1217.83 2080.67 1208.45 2076.91 1202 2081C1181.5 2094 1154 2090 1150.5 2094L1133.5 2099L1155.5 2115.5L1169 2136.5L1176.5 2159.5H1160V2185L1185 2225L1202 2212H1256.5L1235.5 2259L1249 2244.5L1299 2248L1334.5 2244.5L1380.5 2221L1417.5 2219.5L1414.5 2206.5L1424 2191.5L1414.5 2159.5V2136.5L1399.5 2111L1390 2094L1376 2067.5L1366.5 2037.5V2010L1360 1988L1366.5 1960.5L1354 1930.5L1350.5 1919L1335 1913.5L1311.5 1906.5L1286.5 1900L1256.5 1893L1249 1908.5L1236.5 1917.5L1223 1933Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(920.5 2115.5)" >
+                          <!-- Circle with radius 80 -->
+                          <circle cx="400" cy="00" r="50" fill="WHITE" opacity="0.4" />
+              
+                          <!-- Larger central dot -->
+                          <circle cx="400" cy="00" r="20" fill="WHITE" />
+                      </g>
+                       </a>
+                      <a xlink:title="Sanghar" onclick="showContent('sanghar-content')">
+                        <path id="myPath" d="M1123.5 1574.5L1144.5 1591.5L1165.5 1599H1172L1185 1584.5V1557V1531L1198 1516.5L1236.5 1505H1249.5H1261L1267.5 1498.5L1280 1482.5L1296 1472.5H1312.5L1317.5 1450L1337 1438.5L1350 1416L1377.5 1438.5L1393.5 1450L1406.5 1466V1482.5L1440.5 1516.5L1463 1544L1477.5 1557L1498.5 1574.5L1513 1579.5L1532.5 1584.5H1555L1602 1579.5H1631H1652H1689.5L1710.5 1591.5L1754 1599H1776.5H1814L1878.5 1600.5L1937 1602H1967.5H1987H2008H2029H2077.5H2097L2144 1618L2166.5 1628L2176 1637.5H2210V1649L2192.5 1670L2176 1697.5L2192.5 1730V1760.5L2210 1794.5L2220 1817L2242.5 1852.5L2263.5 1862.5V1875.5H2210L2176 1891.5L2134 1907.5H2110L2077.5 1891.5L2064.5 1917.5L2008 1956L1967.5 1971L1937 2011V2045H1899.5L1878.5 2061.5H1854.5H1814L1804 2045L1814 2026L1791.5 2011L1776.5 1990L1754 1956L1733 1948H1710.5L1697.5 1927L1675 1898L1641 1875.5L1602 1862.5H1563L1532.5 1852.5L1513 1862.5V1875.5L1498.5 1891.5H1477.5L1463 1917.5L1427.5 1933.5L1369 1898V1907.5H1350V1917.5L1317.5 1907.5L1280 1898L1256 1891.5L1249.5 1907.5L1236.5 1917.5L1222 1933.5L1198 1948L1172 1933.5L1165.5 1927L1144.5 1898L1131.5 1875.5L1115.5 1852.5L1097.5 1835V1810.5L1088 1801L1076.5 1793V1781.5L1081.5 1767L1097.5 1752.5L1105.5 1734.5V1725L1115.5 1712V1700.5L1131.5 1692.5L1123.5 1684.5H1097.5L1081.5 1673H1068.5L1076.5 1663.5L1068.5 1631L1049 1591.5L1058 1580L1068.5 1574.5V1557L1123.5 1574.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(925.5 1415.5)">
+                          <!-- Circle with radius 80 -->
+                          <circle cx="600" cy="300" r="80" fill="WHITE" opacity="0.4" />
+                      
+                          <!-- Larger central dot -->
+                          <circle cx="600" cy="300" r="20" fill="WHITE" /> </g>
+                      </a>
+                      <a xlink:title="MirpurKhas" onclick="showContent('mirpur-content')">
+                        
+                        <path id="myPath" d="M1515 1875.5L1501.5 1892H1479.5L1464.5 1917.5L1441 1927.5L1429.5 1934L1398.5 1915.5L1369.5 1898.5V1907.5H1349.5V1917.5L1365.5 1957L1360.5 1986.5L1365.5 2009.5V2033V2048.5L1382 2080L1397.5 2105.5L1414 2139V2191L1423 2231.5V2266.5V2286.5L1458.5 2316L1483 2330.5L1499.5 2347L1545 2377.5L1558.5 2394L1582 2438H1595.5H1625.5L1646 2451.5L1662.5 2478V2484V2545L1708 2517.5H1724.5H1742L1791 2478L1765 2472.5L1756.5 2455.5V2438L1739 2399.5L1724.5 2386.5V2377.5L1714.5 2367V2327.5L1681 2253L1666.5 2218L1649 2187.5L1638 2163.5L1628.5 2150.5L1618.5 2139L1591.5 2118.5L1567.5 2092V2061.5L1575.5 2028H1604L1646 2018L1662.5 2009.5L1680.5 1993V1978.5V1965.5L1708 1957.5V1944.5C1701.17 1936.67 1697.5 1927.5 1686 1915.5C1674.5 1903.5 1670.5 1885.5 1654 1885.5L1638 1875.5L1604 1864L1572 1858.5H1545L1532 1853.5L1515 1864V1875.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(925.5 1915.5)">
+                          <!-- Circle with radius 80 -->
+                          <circle cx="600" cy="300" r="80" fill="WHITE" opacity="0.4" />
+                      
+                          <!-- Larger central dot -->
+                          <circle cx="600" cy="300" r="20" fill="WHITE" /> </g>
+                      </a>
+                      <a xlink:title="Umerkot" onclick="showContent('umer-content')">
+                        <path id="myPath" d="M1812 2454.5L1800.5 2471.5L1783.5 2478L1766.5 2471.5L1756.5 2454.5V2438L1746.5 2417.5L1740 2397.5L1726.5 2386V2377.5L1714.5 2367.5V2347V2327L1689.5 2275L1681 2245L1664.5 2213L1649 2181L1639 2159L1609 2132L1588.5 2114L1568.5 2090.5V2070L1577 2030H1609L1649 2018L1664.5 2006.5L1681 1994.5V1967.5L1714.5 1957.5H1740L1756.5 1967.5L1766.5 1994.5L1790.5 2018L1812 2030L1800.5 2051.5L1834 2061.5H1866L1896 2051.5H1934.5V2018L1955 1994.5L1995 1967.5L2022 1944L2042 1930.5L2062.5 1920.5L2082.5 1904H2119.5L2166.5 1894L2186.5 1880.5H2233.5H2260.5H2280.5H2290.5L2304 1894L2314 1920.5L2280.5 1930.5L2270.5 1944V1967.5V1994.5L2280.5 2018V2051.5V2114L2260.5 2172.5V2191V2213L2250.5 2245H2233.5L2210 2233H2186.5H2166.5L2139.5 2224.5H2119.5L2082.5 2213L1995 2224.5L1968.5 2245L1955 2266.5L1934.5 2317L1916 2367.5L1896 2397.5L1866 2411H1844L1822 2438L1812 2454.5Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1225.5 1915.5)">
+                          <!-- Circle with radius 80 -->
+                          <circle cx="600" cy="300" r="80" fill="WHITE" opacity="0.4" />
+                      
+                          <!-- Larger central dot -->
+                          <circle cx="600" cy="300" r="20" fill="WHITE" /> </g>
+                      </a>
+                      <a xlink:title="Tharparkar" onclick="showContent('thar-content')">
+                        <path id="myPath" d="M2391 1951H2341.5L2295 1924.5L2278.5 1951V1980.5V2063V2122.5V2149L2255.5 2182V2218.5L2232.5 2248H2199.5H2173L2120 2218.5H2054H2014L1964.5 2248L1953 2279.5L1936 2311.5L1902 2397L1868 2409H1843.5L1799.5 2473L1740 2519H1710.5L1667.5 2545.5L1634.5 2582V2608.5L1604.5 2641.5L1578 2697.5V2717.5L1558.5 2744V2770.5L1515.5 2790V2816.5V2863L1541.5 2896H1578H1604.5H1634.5H1667.5H1710.5L1740 2925.5H1776.5H1799.5H1842.5L1882 2948.5L1918.5 2968.5L1964.5 2995H2014H2054H2097H2153L2173 2968.5L2153 2948.5L2173 2896H2232.5L2295 2863H2341.5L2391 2836.5H2430.5L2450.5 2816.5H2477H2500H2526.5L2562.5 2790V2770.5H2609V2790L2562.5 2816.5L2526.5 2863V2896L2586 2948.5L2701.5 2925.5V2770.5L2738 2321L2701.5 2284.5L2648.5 2218.5L2586 2155.5V2083V1980.5V1924.5L2526.5 1951H2477H2391Z" fill="#D9D9D9" stroke="black"/>
+                        <g transform="translate(1525.5 2355.5)">
+                          <!-- Circle with radius 80 -->
+                          <circle cx="600" cy="300" r="80" fill="WHITE" opacity="0.4" />
+                      
+                          <!-- Larger central dot -->
+                          <circle cx="600" cy="300" r="20" fill="WHITE" /> </g>
+                      </a>
+                  </svg>
+              </div>
+          </div>
+   
+         
+          </div>
+          
+          
+          
+          
+         </section>
+        <!-- ui -->
+        
+    
+        <!-- </section> -->
+        <!-- brand-carousel -->
+        <section style="padding-top: 2rem;">
+        <div>
+          <h1 class="gradient-text text-center" style="background-image:linear-gradient(45deg, #009688, #4CAF50, #009688, #4CAF50) !important;">OUR PARTNERS</h1>
+          <div class="logos">
+            <div class="logos-slide">
+              <img src="./images/B1.jpeg" alt="">
+              <img src="./images/B2.jpeg" alt="">
+              <img src="./images/B3.jpeg" alt="">
+              <img src="./images/B4.jpeg" alt="">
+              <img src="./images/B5.jpeg" alt="">
+              <img src="./images/B6.png" alt="">
+              <img src="./images/B7.jpeg" alt="">
+              <img src="./images/B8.jpeg" alt="">
+              <img src="./images/B9.png" alt="">
+              <img src="./images/B10.jpeg" alt="">
+              <img src="./images/B11.jpeg" alt="">
+              <img src="./images/B12.jpeg" alt="">
+              <img src="./images/B13.jpeg" alt="">
+              <img src="./images/B14.jpeg" alt="">
+              <img src="./images/B15.jpeg" alt="">
+              <img src="./images/B16.png" alt="">
+              <img src="./images/B17.png" alt="">
+              <img src="./images/B18.png" alt="">
+              <img src="./images/B19.png" alt="">
+              <!-- <img src="./images/B20.svg" alt=""> -->
+            </div>
+            <div class="logos-slide">
+            <img src="./images/B1.jpeg" alt="">
+              <img src="./images/B2.jpeg" alt="">
+              <img src="./images/B3.jpeg" alt="">
+              <img src="./images/B4.jpeg" alt="">
+              <img src="./images/B5.jpeg" alt="">
+              <img src="./images/B6.png" alt="">
+              <img src="./images/B7.jpeg" alt="">
+              <img src="./images/B8.jpeg" alt="">
+              <img src="./images/B9.png" alt="">
+              <img src="./images/B10.jpeg" alt="">
+              <img src="./images/B11.jpeg" alt="">
+              <img src="./images/B12.jpeg" alt="">
+              <img src="./images/B13.jpeg" alt="">
+              <img src="./images/B14.jpeg" alt="">
+              <img src="./images/B15.jpeg" alt="">
+              <img src="./images/B16.png" alt="">
+              <img src="./images/B17.png" alt="">
+              <img src="./images/B18.png" alt="">
+              <img src="./images/B19.png" alt="">
+              <!-- <img src="./images/B20.svg" alt=""> -->
+          </div>
+          </div>
+        </div>
+        </section>
+            <!-- footer -->
+        <footer class="foot">
+          <div class="col-md-12">
+            <div class="col-md-12 d-flex flex-wrap align-items-center" style="justify-content: space-between; padding:1rem 2rem 0rem 2rem;">
+              <div class="col-md-4">
+                <img src="./images/logo-sid.png" class="img-fluid" alt="">
+              </div>
+              <div class="align-items-center col-md-4 m-auto" style="padding:2rem;">
+                <h6>Send us an enquiry:</h6>
+                <a xlink:title="ww" href="mailto:info@sedf.gos.pk">info@sedf.gos.pk</a>
+              </div>
+              <div class="icons col-md-4 m-auto">
+                <ul class="social-icons flex-wrap">
+                  <li>
+                      <a xlink:title="ww" href="https://www.sedf.gos.pk/" >
+                          <i class="fas fa-globe"></i> <!-- Website Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a xlink:title="ww" href="mailto:info@sedf.gos.pk">
+                          <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a xlink:title="ww" href="https://www.facebook.com/SindhEnterpriseDevelopmentFund/" >
+                          <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a xlink:title="ww" href="https://www.linkedin.com/company/sindh-enterprise-development-fund/" >
+                          <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a xlink:title="ww" href="https://twitter.com/SEDFgovofsindh" >
+                          <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                      </a>
+                  </li>
+                  <li>
+                    <a xlink:title="ww" href="https://youtube.com/@sindhenterprisedevelopment6485?si=vmM4LGofuiOvRVza">
+                        <i class="fab fa-youtube"></i> <!-- Twitter Icon -->
+                    </a>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex flex-wrap" style="align-items: center;justify-content:space-around;padding: 0rem 0rem 1rem 0rem;">
+              <div class="col-md-4 text-center">              <p class="col-md-3 " style="text-align: left;padding: 10px; display: contents;">2023 Sindh Investment Government. All rights reserved.</p>
+              </div>
+              <div class="col-md-5 my-2">
+                <ul class="d-flex" style="list-style-type: none;color: white;list-style-type: none;justify-content: center;">
+                  <!-- <li class="mx-3">a</li> -->
+                  <li class="mx-3"><a href="./privacy/">Privacy Policy</a></li>
+                  <li class="mx-3"><a href="./terms/">Terms of Use & Engagement</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+<!--  -->
+      </div>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+      </script>
+      <!--  -->
+      <script>
+    function showContent(contentId) {
+      const slideContents = document.querySelectorAll('.slide-content');
+      slideContents.forEach(content => {
+        content.style.display = 'none';
+      });
+      const content = document.getElementById(contentId);
+      if (content) {
+        content.style.display = 'block';
+      }
+    }
+
+    // Set Karachi as the default display
+    showContent('karachi-content');
+      </script>
+      <script>
+        const path = document.getElementById("myPath");
+        let isScaled = false;
+      
+        path.addEventListener("click", function() {
+          if (isScaled) {
+            path.style.transform = "none";
+          } else {
+            path.style.transform = "scale(1.2) perspective(500px) rotateY(20deg)";
+          }
+          isScaled = !isScaled;
+        });
+      </script>
+      
+
+      <!--  -->
+   <script>
+    // Function to animate the counting effect
+    // Function to animate the counting effect for all elements
+    function animateCounts() {
+      const countElements = document.querySelectorAll(".count");
+
+      countElements.forEach((element) => {
+        const targetCount = parseFloat(element.textContent.replace(/,/g, ""));
+        const duration = 10000; // Animation duration in milliseconds
+        const step = 50; // Time between each step in milliseconds
+        const stepCount = duration / step;
+        const increment = targetCount / stepCount;
+
+        let currentCount = 0;
+        const interval = setInterval(() => {
+          currentCount += increment;
+          element.textContent = numberWithCommas(currentCount.toFixed(0));
+
+          if (currentCount >= targetCount) {
+            element.textContent = numberWithCommas(targetCount.toFixed(0));
+            clearInterval(interval);
+          }
+        }, step);
+      });
+    }
+    // Format numbers with commas for better readability
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    // Trigger the animation when the page loads or as needed
+    animateCounts();
+
+   </script>   
+
+
+   <script>
+      // Function to animate a numeric element
+      function animateValue(id, start, end, duration) {
+        var range = end - start;
+        var current = start;
+        var increment = range / (duration / 1000);
+        var element = document.getElementById(id);
+        var timer = setInterval(function () {
+          current += increment;
+          element.textContent = current.toFixed(2); // Adjust the number of decimal places as needed
+          if (current >= end) {
+            clearInterval(timer);
+            element.textContent = end.toFixed(2); // Ensure the final value is exact
+          }
+        }, 1000); // Update every second (adjust as needed)
+      }
+    
+      // Animate values when the page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        // Animate values for Hyderabad
+        animateValue('gsdp-hyderabad', 0, 50, 5); // Example values, adjust as needed
+        animateValue('growthRate-hyderabad', 0, 5, 5); // Example values, adjust as needed
+        animateValue('perCapitaIncome-hyderabad', 0, 1000, 5); // Example values, adjust as needed
+        animateValue('fdiInflows-hyderabad', 0, 20, 5); // Example values, adjust as needed
+    
+        // Repeat the above for other content sections, changing the IDs and values accordingly
+        animateValue('gsdp-larkana', 0, 60, 5);
+        animateValue('growthRate-larkana', 0, 4, 5);
+        animateValue('perCapitaIncome-larkana', 0, 900, 5);
+        animateValue('fdiInflows-larkana', 0, 15, 5);
+    
+        // Repeat for other content sections...
+      });
+    </script>
+    
+           <!--  -->
+           <script>
+            const svgPath = document.getElementById('myPath');
+        
+            svgPath.addEventListener('click', function() {
+                this.classList.toggle('clicked');
+            });
+        </script>
+<script>
+      // Define slideToContentMap outside of the event handler
+      var slideToContentMap = {
+        'slide1': 'karachi-content',
+        'slide2': 'hyderabad-content',
+        'slide3': 'larkana-content',
+        'slide4': 'sukkur-content',
+        'slide5': 'nawabshah-content',
+        'slide6': 'shikarpur-content',
+      };
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the carousel element
+        var carousel = document.getElementById('carouselExampleDark');
+    
+        // Add an event listener for when the slide changes
+        carousel.addEventListener('slid.bs.carousel', function () {
+          // Get the active slide
+          var activeSlide = document.querySelector('.carousel-item.active');
+    
+          // Hide all content by default
+          for (var contentId in slideToContentMap) {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'none';
+          }
+    
+          // Determine which slide is active and show the corresponding content
+          var activeSlideId = activeSlide.id;
+          var activeContentId = slideToContentMap[activeSlideId];
+    
+          if (activeContentId) {
+            document.getElementById(activeContentId).style.display = 'block';
+          }
+        });
+    
+        // Initially, hide all content except for the content of the first slide
+        for (var contentId in slideToContentMap) {
+          if (contentId === 'slide1') {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'block';
+          } else {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'none';
+          }
+        }
+      });
+    </script>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-QAc08ipPd7ElgrEsKMj9mFi1LOYhEBBeusKfVSXktZSjlm5BIThey5q7IEYtZVixxC+lIN6CnSZCfI4s00Dq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  	<script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script  src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

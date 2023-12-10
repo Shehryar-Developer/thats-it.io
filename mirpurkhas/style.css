@@ -1,0 +1,667 @@
+
+*{
+    padding:none;
+    box-sizing: border-box;
+    margin:none;
+}
+ul{
+    padding-left: 0rem !important;
+}
+body{
+    padding: none !important;
+    margin:none !important;
+    align-items: center;
+    display: flex;
+    height:fit-content  ;
+    background-image: url("./p.avif"); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background image fixed */
+    background-size: cover; /* Adjust 
+    /* background-size: contain;
+    
+    z-index: -2;
+    position: sticky; */
+    }
+    p{
+        font-family: 'Roboto', sans-serif !important;
+
+    }
+/* navbar */
+.navbar{
+    background: linear-gradient(30deg, #517625, #009688) !important;
+    /* box-shadow: 0px 9px 13px rgb(99 99 99); */
+    position: fixed !important;
+    z-index: 10;
+    width: 100%;
+}
+.navbar img{
+    height: 4rem !important;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+.navbar-nav{
+    width: 85%;
+    justify-content: space-evenly;
+}
+    .nav-link {
+        color: white !important;
+        font-size: large !important;
+        position: relative; /* Add this to enable absolute positioning for pseudo-element */
+        transition: all ease-in-out 0.6s;
+    }
+    .nav-link:hover::before{
+        display: block;
+    }
+
+    .navbar-nav .nav-item {
+        position: relative; /* Add this to enable absolute positioning for pseudo-element */
+        transition: all ease-in-out 0.6s;
+    }
+    
+    .navbar-nav .nav-item::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        width: 44px;
+    height: 3px;
+/* Adjust the border height as needed */
+        background-color: #69bd08; /* Adjust the border color as needed */
+        transition: width 0.3s ease-in-out; /* Adjust the transition duration as needed */
+    }
+    
+    .navbar-nav .nav-item:hover::before {
+        width: 100%;
+    }
+    
+   /* Initial styles for the dropdown menu */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1px;
+    width:15rem;    
+    margin-left: -10px;
+    width: 20rem;
+    box-shadow: 13px 1px 1px rgb(0, 150, 136,0.3);
+    /* display: block !important; */
+    padding-right: 1.5rem;
+}
+.dropdown-menu .col-md-6:nth-child(2) ul li a{
+    text-decoration: none;
+    font-size: 12px;    
+}
+/* Add a border bottom to all <li> in the first col-md-6 */
+.d-md-flex .col-md-6:first-child li,
+.d-md-flex .col-md-6:last-child a {
+    /* text-decoration: underline; */
+    color:#000;
+    border-bottom: 1px solid #8BC34A;
+    display: inline-block;
+
+}
+/* Add a small image after the <a> tags in the first col-md-6 on hover */
+.d-md-flex .col-md-6:first-child a:hover::after {
+    content: url('./images/arrow.png'); /* Replace 'your-image-url.png' with the URL of your image */
+    margin-left: 5px; /* Adjust this value for spacing */
+    text-decoration: none;
+    position: absolute;
+}
+
+
+/* Add a small image after the first <a> tag in the second col-md-6 on hover */
+.d-md-flex .col-md-6:last-child a:first-child:hover::after {
+    content: url('./images/arrow.png'); /* Replace 'your-image-url.png' with the URL of your image */
+    margin-left: 5px; /* Adjust this value for spacing */
+    position: absolute;
+}
+/* Add a small image after the first <a> tag in the second col-md-6 on hover */
+.d-md-flex .col-md-6:last-child a:first-child:hover::after {
+    content: url('./images/arrow.png'); /* Replace 'your-image-url.png' with the URL of your image */
+    margin-left: 5px; /* Adjust this value for spacing */
+}
+.d-md-flex .col-md-2:last-child a:first-child:hover::after {
+    content: url('./images/arrow.png'); /* Replace 'your-image-url.png' with the URL of your image */
+    margin-left: 5px; /* Adjust this value for spacing */
+    position: absolute;
+}
+/* Add a small image after the first <a> tag in the second col-md-6 on hover */
+.d-md-flex .col-md-2:last-child a:first-child:hover::after {
+    content: url('./images/arrow.png'); /* Replace 'your-image-url.png' with the URL of your image */
+    margin-left: 5px; /* Adjust this value for spacing */
+}
+.sec .first a{
+    border-bottom: none !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: none !important;
+    background-color: none !important;
+}
+/* Remove hover effect for dropdown items */
+.navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover,
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+/* Remove hover effect for dropdown toggle */
+.navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover {
+    background-color: transparent !important;
+    color:black!important;
+    border-color: transparent !important;
+}
+
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: bolder;
+    color: #4CAF50;
+
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: white;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+}
+/* Show dropdown on hover with a transition from bottom to top */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    transform: translateY(0);
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+    transform: translateY(0%); 
+
+    /* transform: translateY(0); */
+    visibility: visible; /* Add this to make the dropdown menu visible */
+    transition: transform 0.3s ease, border-bottom 0.3s ease; /* Adjust the transition properties as needed */
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: none !important;
+    text-decoration: none;
+    background-color: none !important;
+}
+
+/* Initial styles for the dropdown menu */
+.navbar-nav > li.dropdown .dropdown-menu{
+    display: none;
+    background: linear-gradient(33deg, #009688, #9E9E9E);
+    transform: translateY(32%); 
+    transition: transform 0.3s ease, border-bottom 0.3s ease; /* Adjust the transition properties as needed */
+}
+.sec{
+    padding: 0rem !important;
+}
+.sec li{
+    width: 100%;
+    border-bottom: none !important;
+    margin:4px;
+}
+.first{
+    margin: 1px;
+}
+.aa{
+    /* margin: auto !important; */
+    align-content: space-evenly;
+    display: grid;
+
+}
+.foot{
+    margin-top: 2rem;
+    background: linear-gradient(30deg, #517625, #009688) !important;
+ }
+ footer a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+footer h6 {
+    font-weight: 900;
+    color: white;
+    font-size: medium;
+}
+footer p {
+    font-size: medium;
+    color: white;
+    font-weight: 100;
+}
+/* footer icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-right: 5px;
+    color: white !important;
+}
+.social-icons li:hover{
+    color:#16c1b1 !important;  
+}
+.social-icons a {
+    text-decoration: none;
+    /* color: #333; */
+    font-size: 24px;
+}
+.icons{
+    align-items: center;
+    display: flex;
+    /* width: 58%; */
+    justify-content: center;
+}
+/* HEADER */
+.header ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.header {
+    border-bottom: 2px solid #4CAF50;
+    margin-top: 5.5rem;
+    background: linear-gradient(45deg, #009688, #4CAF50);
+    padding: 0rem;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 0px;
+    z-index: 5;
+}
+.header a{
+    text-decoration: none;
+    color:white;
+    padding: 2px;
+}
+.header ul{
+    margin:auto
+}
+.active{
+    border: solid transparent;
+    border-radius: 50px;
+    background:#4CAF50;
+   padding: 3px 5px 2px 4px !important; 
+}
+.active1{
+    border: solid transparent;
+    border-radius: 50px;
+    background:#009688;
+   padding: 3px 5px 2px 4px !important; 
+}
+.animate-on-scrollt1 {
+    opacity: 0;
+    transform: translateY(-50%); /* Move themss to the left */
+    transition: opacity 3s, transform 1s ease-in-out;
+}
+
+/* Animate them in when they enter the viewport */
+.animate-on-scrollt1.in-viewport {
+    opacity: 1;
+    transform: translateY(0); /* Animate to their original position */
+}
+/* second header */
+.second-header ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.second-header {
+    margin-top: 8rem;
+    background: linear-gradient(45deg, #009688, #4CAF50);
+    padding: 0rem;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.second-header a{
+    text-decoration: none;
+    color:white;
+    font-size: small;
+    padding: 2px;
+}
+.second-header ul{
+    margin:auto
+}
+
+.animate-on-scrollt1 {
+    opacity: 0;
+    transform: translateY(-50%); /* Move themss to the left */
+    transition: opacity 3s, transform 1s ease-in-out;
+}
+
+/* Animate them in when they enter the viewport */
+.animate-on-scrollt1.in-viewport {
+    opacity: 1;
+    transform: translateY(0); /* Animate to their original position */
+}
+
+
+/* cover */
+.cover{
+    margin-top: 10rem;
+    margin-bottom: 0rem;
+    position: relative;
+
+}
+.position-relative{
+    position: relative;
+}
+.cover img{
+    height: 25rem;
+    width: 100%;
+    /* opacity: 0.7; */
+    position: absolute;
+    display: block;
+    /* background:url(./cover.avif) */
+}
+.cover h1{
+    position: absolute;
+    color:white;
+    margin: 10rem 0rem 0rem 5rem;
+    font-size:xxx-large;
+    font-weight: 900;
+}
+.gradient-text3 {
+    background-image:linear-gradient(45deg, #009688, #5d985f, #009688, #283028);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: medium;
+    font-weight: 900;
+}
+.reveal {
+    position: relative;
+    transform: translate(-20px, -150px); /* Move diagonally */
+    opacity: 0;
+    transition: all 2s;
+}
+
+.reveal.in-viewport {
+    transform: translate(0, 0); /* Reset to the original position */
+    opacity: 1;
+}
+.reveal1 {
+    position: relative;
+    transform: translate(91px, -169px);
+    opacity: 0;
+    transition: all 2s;
+}
+.reveal1.in-viewport {
+    transform: translate(0, 0); /* Reset to the original position */
+    opacity: 1;
+}
+
+.color{
+    width: 100%;
+    border: solid none;
+    position: absolute;
+    z-index: 2;
+    height: 25rem;
+    background: rgb(104 100 100 / 24%); 
+}
+.animata {
+    opacity: 0;
+    transform: translateY(50%); /* Move themss to the left */
+    transition: opacity 3s, transform 1.5s ease-in-out;
+}
+
+/* Animate them in when they enter the viewport */
+.animata.in-viewport {
+    opacity: 1;
+    transform: translateY(0); /* Animate to their original position */
+}
+/* paragraph */
+.para{
+    margin-top: 36rem;
+}
+.para p{
+    /* margin: 26rem 2rem 0rem 2rem; */
+    color: black;
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: larger;
+    font-weight: 700;
+    word-spacing: 2px;
+}
+.ll{
+    padding: 0 !important;
+}
+.ll li {
+  list-style: none;
+  padding-left: 30px; /* Adjust as needed to control the space between the arrow and text */
+  position: relative;
+}
+
+.ll li::before {
+  content: '\2192'; /* Unicode arrow character (right arrow) */
+  margin-right: 10px; /* Adjust as needed */
+  font-size: 24px; /* Adjust the font size as needed */
+  color: cadetblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ll li{
+    font-size: large;
+}
+.para h2{
+    background-image:linear-gradient(45deg, #009688, #5d985f, #009688, #283028);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* font-size: medium; */
+    font-weight: 900;
+}
+.animata {
+    opacity: 0;
+    transform: translateY(50%); /* Move themss to the left */
+    transition: opacity 3s, transform 1.5s ease-in-out;
+}
+
+/* Animate them in when they enter the viewport */
+.animata.in-viewport {
+    opacity: 1;
+    transform: translateY(0); /* Animate to their original position */
+}
+.gradient-text2 {
+    background-image:linear-gradient(45deg, #009688, #5d985f, #009688, #283028);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* font-size: medium; */
+    font-weight: 900;
+}
+.para a {
+    text-decoration: none;
+    background: linear-gradient(45deg, #4CAF50, #009688);
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 20px;
+    /* margin-top: 1rem; */
+    display: inline-flex;
+    transition: all ease-in-out 0.3s;
+    color: white;
+}
+.para a:hover {
+    transform: scale(1.1);
+}
+.ff{
+    padding: 1rem 2rem 1rem 1rem  !important;
+}
+/* intro */
+.intro p{
+    padding: 2rem 6rem 0rem 2rem;
+    font-size: large;
+    line-height: 29px;
+    color: white;
+}
+.intro{
+    margin:33rem 0rem 0rem 0rem;
+    background: linear-gradient(45deg, #009688, #4CAF50);
+    background-repeat: no-repeat;
+}
+/* Initially hide the more content */
+.more-content {
+    display: none;
+}
+.intro a{
+    font-size: medium;
+    color: #4CAF50;
+    font-weight: 900;
+}
+.image{
+    margin: auto;
+    /* padding: 0rem 1rem 0rem 0rem; */
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+.image img{
+    padding: 6px;
+}
+@media (max-width: 768px)  {
+    
+    .second-header{
+        margin-top: 5rem;
+    }
+    .navbar img{
+        height: 3rem !important;
+    }
+    .header{
+        margin-top: 4.5rem !important;
+    }
+    .para p{
+        /* margin: 26rem 2rem 0rem 2rem; */
+        color: black;
+        padding: 0rem 0rem 2rem 0rem;
+        font-size: medium;
+        font-weight: 700;
+        word-spacing: 5px;
+    }
+    .ff{
+        padding: 0rem 0rem 0rem 0rem !important;
+    }
+    .nav-link {
+        color: white !important;
+        font-size: large !important;
+        position: relative; 
+        transition:none !important;
+    }
+    .nav-item:nth-child(1)::after {
+    content: '\2192'; /* Unicode character for a downward-pointing triangle */
+    display: inline-block;
+    font-size: 3em; /* Adjust the size of the arrow */
+    margin-left: 6.6rem; /* Adjust the spacing from the text */
+    position: absolute;
+    margin-top: -4rem;
+}
+.nav-item:nth-child(2)::after {
+    content: '\2192'; /* Unicode character for a downward-pointing triangle */
+    display: inline-block;
+    font-size: 3em; /* Adjust the size of the arrow */
+    margin-left: 6.6rem; /* Adjust the spacing from the text */
+    position: absolute;
+    margin-top: -4rem;
+}
+.nav-item:nth-child(3)::after {
+    content: '\2192'; /* Unicode character for a downward-pointing triangle */
+    display: inline-block;
+    font-size: 3em; /* Adjust the size of the arrow */
+    margin-left: 8rem; /* Adjust the spacing from the text */
+    position: absolute;
+    margin-top: -4rem;
+}
+.nav-item:nth-child(4)::after {
+    content: '\2192'; /* Unicode character for a downward-pointing triangle */
+    display: inline-block;
+    font-size: 3em; /* Adjust the size of the arrow */
+    margin-left: 6rem; /* Adjust the spacing from the text */
+    position: absolute;
+    margin-top: -4rem;
+}
+.nav-item:nth-child(5)::after {
+    content: '\2192'; /* Unicode character for a downward-pointing triangle */
+    display: inline-block;
+    font-size: 3em; /* Adjust the size of the arrow */
+    margin-left: 3.4rem; /* Adjust the spacing from the text */
+    position: absolute;
+    margin-top: -4rem;
+}
+
+        /*  */
+    .nav-link:hover::before {
+        width: 0;
+    }
+    .d-md-flex {
+        display: block !important;
+    }
+    
+    .dropdown-submenu {
+        display: none;
+    }
+    .dropdown-menu .col-md-6 li{
+
+        width: 100%;
+    }
+    .navbar-nav .nav-item:hover::before {
+        width: 0 !important;
+    }
+    .navbar-nav .nav-item
+    .dropdown-menu .col-md-6:nth-child(2) {
+        display: none !important;
+    }
+    .navbar-nav .nav-item::before{
+        display: none;
+    }
+    .navbar-nav{
+        text-align: left;
+    }   
+    .navbar-nav .nav-item::before{
+        left: 7rem;
+        width: 7rem;
+    }
+    .dropdown-menu{
+        display: none !important;
+    }
+    .cover img{
+        height: 23rem;
+    }
+    .cover {
+        margin-top: -3rem;
+    }
+
+    .para{
+        margin-top: 24rem;
+    }
+
+}
+
+
+
+
+/*  */
+/*  */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+thead{
+    background: lin;
+}

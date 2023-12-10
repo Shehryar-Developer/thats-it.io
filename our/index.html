@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <link rel="icon" href="../board/icon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-LsU5gfvfV/GHwKY6r4FgM+Rz3rN6EhGJqFkCt4o3PCY5VwB1+G6b1Yd2o6K1e7u42hoT+lsMxWmv3v3Kznjmbuyw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  </head>
+<body>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../images/logo-sid.png" alt="">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item  dropdown"> 
+                  <a class="nav-link  dropdown-toggle" href="../About_US/"  aria-expanded="false">
+                    Who We Are
+                  </a>
+                  <ul class="dropdown-menu ">  
+                    <div class="d-sm-none d-md-flex" style="color: #8BC34A;">
+                        <div class="col-md-6 col-sm-12">
+                            <li><a class="dropdown-item" href="../About_US/">About Us</a></li>
+                            <li><a class="dropdown-item" href="../overview/">Overview</a></li>
+                            <li><a class="dropdown-item" href="../careers/">Careers</a></li>
+                            <li><a class="dropdown-item" href="../contact/">Contact</a></li>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a class="dropdown-item" href="./executive/" style="padding: 0; display: inline !important;">Our People</a>
+                            <ul class="dropdown-submenu" style="list-style-type: none; padding: 0; font-size: small;">
+                                <li class="my-2"><a href="../executive/">Executive Staff</a></li>
+                                <li class="my-2"><a href="../board/">Board of Directors</a></li>
+                                <li class="my-2"><a href="../development">Development Advisory Council</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>                  
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./regions" role="button" aria-expanded="false">
+                  What We Do    
+                </a>
+                <ul class="dropdown-menu" style="padding-right: none !important;">  
+                  <div class="d-sm-none d-md-flex col-md-10" style="color: #8BC34A;">
+                      <div class="col-md-6 col-sm-12">
+                          <li style="border-bottom: none !important;">
+                            <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Work</a>
+                            <ul class="sec" >
+                              <li><a href="./regions" class="dropdown-item">Regions</a></li>
+                              <li><a href="./sectors" class="dropdown-item">Sectors</a></li>
+                              <li><a href="./initiate" class="dropdown-item">Initiatives</a></li>
+                            </ul>
+                          
+                          </li>
+                 
+                      </div>
+                      <div class="col-md-6 col-sm-12 aa">
+                          <a class="dropdown-item col-md-2" href="#" style="padding: 0; display: inline !important;">Active Projects</a>
+                          <a href="" class="dropdown-item col-md-2" style="padding: 0; display: inline !important;">Investment Stories</a>                          
+                      </div>
+                  </div>
+              </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./debt" role="button"  aria-expanded="false">
+                  What We Offer
+                </a>
+                <ul class="dropdown-menu">  
+                  <div class="d-md-flex " style="color: #8BC34A; justify-content: space-evenly;">
+                    <div class="col-md-6">
+                      <li style="border-bottom: none !important;" >
+                        <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="./debt">Our Products</a>
+                        <ul class="sec"style="list-style-type:none ;  font-size: small !important; ">
+                          <li class="first">
+                            <a href="./debt" data-drupal-link-system-path="node/166" class="dropdown-item">Debt Financing</a>
+                        </li>
+                        <li class="first">
+                            <a href="/what-we-offer/our-products/equity-investments" data-drupal-link-system-path="node/161" class="dropdown-item">Equity Investments</a>
+                        </li>
+                        <li class="first">
+                            <a href="./" data-drupal-link-system-path="node/5266" class="dropdown-item">Investment Funds</a>
+                        </li>
+                        <li class="first">
+                            <a href="/what-we-offer/our-products/technical-assistance-feasibility-studies" data-drupal-link-system-path="node/1266" class="dropdown-item">Feasibility Studies</a>
+                        </li>
+                        <li class="first">
+                            <a href="/what-we-offer/our-products/political-risk-insurance" data-drupal-link-system-path="node/156" class="dropdown-item">Political Risk Insurance</a>
+                        </li>
+                        <li class="first">
+                            <a href="/what-we-offer/our-products/technical-assistance-feasibility-studies" data-drupal-link-system-path="node/1266" class="dropdown-item">Technical Assistance</a>
+                        </li>
+                        
+                        </ul>
+                      
+                      </li>
+                    </div>
+                    <div class="col-md-6">
+                      <li style="border-bottom: none !important;" >
+                        <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Work With us</a>
+                        <ul class="sec"style="list-style-type:none ;  font-size: small !important;">
+                          <li class="first">
+                            <a href="/what-we-offer/our-products/debt-financing" data-drupal-link-system-path="node/166" class="dropdown-item">Where We Work</a>
+                        </li>
+                        <li class="first">
+                            <a href="/what-we-offer/our-products/equity-investments" data-drupal-link-system-path="node/161" class="dropdown-item">Investment Policies</a>
+                        </li>
+                        <li class="first">
+                            <a href="./eligibility/" data-drupal-link-system-path="node/5266" class="dropdown-item">Eligibility CheckList</a>
+                        </li>
+                        <li class="first">
+                          <a href="./apply/" style="font-size: larger;
+                          font-weight: 100;
+                          text-align: center;" data-drupal-link-system-path="node/5266" class="dropdown-item">Apply</a>
+                      </li>
+                                                
+                        </ul>
+                  
+                      </li>
+                    </div>
+                   </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./About_US/" role="button"  aria-expanded="false">
+                  Our Impact
+                </a>
+                <ul class="dropdown-menu" >  
+                  <div class="d-md-flex" style="color: #8BC34A;">
+                    <div class="col-md-6">
+                      <li><a class="dropdown-item" href="./About_US/">About Us</a></li>
+                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="#">Careers</a></li>
+                      <li><a class="dropdown-item" href="">Contact</a></li>
+                    </div>
+                    <div class="col-md-6">
+                      <a class="dropdown-item" href="#" style="padding:0;">Action</a>
+                          <ul style="list-style-type: none;padding: 0;font-size: small;">
+                             <li class="my-2"><a href="">Executive Staff</a></li>
+                            <li class="my-2"><a href="">Board of Directors</a></li>
+                            <li  class="my-2"><a href="">Development Advisory Council</a></li>
+                          </ul>
+                     </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./newsroom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Media
+                </a>
+                <ul class="dropdown-menu" style="width:50% !important;">   
+                  <div class="d-md-flex" style="color: #8BC34A;">
+                    <div class="col-md-6" style="font-size: medium !important;">
+                      <li><a class="dropdown-item" href="./newsroom">Newsroom </a></li>
+                      <li><a class="dropdown-item" href="#">In the News</a></li>
+                      <li><a class="dropdown-item" href="#">Speeches & <br>Testimony</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <!-- HEADER -->
+          <section class="header"> 
+            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;">
+              <div class="col-md-6">
+                  <ul class="flex-wrap">
+                    <li class="m-2 animate-on-scrollt1"><a href="../About_US/" >ABOUT US</a></li>
+                    <li class="m-2 animate-on-scrollt1"><a href="../overview/" >OVERVIEW</a></li>
+                    <li class="m-2 animate-on-scrollt1"><a href="../careers/" class="active">CAREERS</a></li>
+                    <li class="m-2 animate-on-scrollt1"><a href="../contact/">CONTACT</a></li>
+                    <li class="m-2 animate-on-scrollt1"><a href="./">OUR PEOPLE</a></li>
+                  </ul>
+              </div>
+            </div>
+          </section>  
+          <section class="second-header"> 
+            <div class="col-md-12" style="justify-content: center;align-items: center;display: flex;">
+              <div class="col-md-6">
+                  <ul class="flex-wrap">
+                    <!-- <li class="m-2 animate-on-scrollt1"><a href="./" >ABOUT US</a></li> -->
+                    <li class="m-1 animate-on-scrollt1 col-md-3"><a href="../executive/" >Executive Staff</a></li>
+                    <li class="m-1 animate-on-scrollt1 col-md-3" ><a href="../investment">Board of Directors</a></li>
+                    <li class="m-1 animate-on-scrollt1 col-md-3"><a href="./" class="active1">Development Advisory Council</a></li>
+                    <li class="m-1 animate-on-scrollt1 col-md-2"><a href="../apply/">Apply</a></li>
+                    <!-- <li class="m-2 animate-on-scrollt1"><a href="">THE PEOPLE</a></li> -->
+                  </ul>
+              </div>
+            </div>
+          </section>  
+           <!-- cover -->
+           <section class="cover">
+            <div class="col-md-12">
+              <div class="color"></div>
+              <div class="col-md-12 position-relative">
+                <img src="./cover.avif" class="img-fluid" alt="">
+              <!-- </div> -->
+              <!-- <div class="col-md-12 text-left"> -->
+                <h1 class="gradient-text3 reveal">Eligibility Checklist</h1>
+              </div>
+            </div>
+          </section>
+          <!-- paragraph -->
+          <section class="para container-fluid">
+              <div class="col-md-12 text-center align-items-center justify-content-center p-4">
+                <h2 class="gradient-text2">Eligibility Criteria & Documents Required</h2>
+
+              </div>
+            <div class="col-md-12">
+              <p>
+                SEDF provides support for projects to USD 3 Million(projects beyond this limit will also be supported subject to SEDF approval).
+                The total subsidy up to the extent of KIBOR (Interest Rate) is at the discretion of SEDF and may vary from case to case.
+              </p>
+             
+              <div class="col-md-12 d-flex flex-wrap">
+                <div class="col-md-8" style="padding: 1rem 2rem 1rem 10rem !important;">
+                   <p style="font-size: large;font-weight: 500;padding: 1rem 2rem 1rem 10rem !important;padding: 0 !important;" >
+                <b>The following information and documents are required for financial assistance from SEDF:</b>
+              </p>
+                  <!-- <h2>WHY INVEST IN SINDH?</h2> -->
+                  <ul class="ll" style="list-style-type: none;">
+                    <li class="reveal1">Duly-Filled Application/ Expression of Interest (EOI) Form.</li>
+                    <li class="animata">Attested Copy of Computerized National Identity Card.</li>
+                    <li class="reveal1">Project Feasibility Report/ Business Plan Together with Annexures</li>
+                    <li class="animata">Vendor's Details with Quotations from Manufacturers of Plant, Machinery, Equipment, Vehicles, Animals and Civil Structure, etc.</li>
+                    <li class="reveal1 ">Land Details and Property Rights.</li>
+                    <li class="animata">Income Tax / Sales Tax / NTN Certificate and Returns for the Last Three Years (if available).</li>
+                    <li class="reveal1">Legal Status of the Company, Registration Number and Date.</li>
+                    <li class="animata">Name of Stakeholders of the Company, their percentage of Shareholding, Professional Expertise and Permanent Residence Address.</li>
+                    <li class="reveal1 ">Details of Collateral / Bank Guarantees, etc.</li>
+                    <li class="animata">Bank Offer Letter / Term Sheet (if available).</li>
+                    <li class="reveal1">Applicant Should Not Be Blacklisted from Any Government Department.</li>
+                    <li class="animata">Any Other Document May Be Required By the SEDF for evaluation of the Project.</li>
+
+                  </ul></div>
+                <div class="col-md-4">
+                  <img src="./p.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              
+            </div>
+          </section>
+
+
+
+
+
+
+
+          <footer class="foot">
+            <div class="col-md-12">
+              <div class="col-md-12 d-flex flex-wrap" style="justify-content: center; padding:1rem 2rem 0rem 2rem;">
+                <img src="../images/logo-sid.png" class="col-md-3" alt="">
+                <div class="align-items-center  col-md-7 text-left" style="padding:2rem;">
+                  <h6>Send us an enquiry:</h6>
+                  <a href="mailto:investmentenquiry@gos.pk">investmentenquiry@gos.pk</a>
+                </div>
+                <div class="icons">
+                  <ul class="social-icons flex-wrap">
+                    <li>
+                        <a href="https://www.sedf.gos.pk/" >
+                            <i class="fas fa-globe"></i> <!-- Website Icon -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@sedf.gos.pk">
+                            <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/SindhEnterpriseDevelopmentFund/" >
+                            <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/sindh-enterprise-development-fund/" >
+                            <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.twitter.com/SEDFofficial" >
+                            <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                        </a>
+                    </li>
+                    <li>
+                      <a href="https://youtube.com/@sindhenterprisedevelopment6485?si=vmM4LGofuiOvRVza">
+                          <i class="fab fa-youtube"></i> <!-- Twitter Icon -->
+                      </a>
+                  </li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-md-12 d-flex flex-wrap" style="align-items: center;justify-content: center;padding: 0rem 0rem 1rem 0rem;">
+                <p>2023 Sindh Investment Government. All rights reserved.</p>
+                <div class="col-md-7">
+                  <ul class="d-flex" style="list-style-type: none;color: white;list-style-type: none;justify-content: center;">
+                    <li class="mx-3">Sitemap</li>
+                    <li class="mx-3">Privacy Policy</li>
+                    <li class="mx-3">Terms of Use & Engagement</li>
+                  </ul>
+                </div>
+                <div class="col-md-1">
+                  <img src="../images/goslogo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-QAc08ipPd7ElgrEsKMj9mFi1LOYhEBBeusKfVSXktZSjlm5BIThey5q7IEYtZVixxC+lIN6CnSZCfI4s00Dq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  	<script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script  src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

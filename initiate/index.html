@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-LsU5gfvfV/GHwKY6r4FgM+Rz3rN6EhGJqFkCt4o3PCY5VwB1+G6b1Yd2o6K1e7u42hoT+lsMxWmv3v3Kznjmbuyw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  </head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed !important;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../">
+                <img src="../images/logo-sid.png" alt="">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item  dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Who We Are
+                        </a>
+                        <ul class="dropdown-menu">  
+                          <div class="d-sm-none d-md-flex" style="color: #8BC34A;">
+                              <div class="col-md-6 col-sm-12">
+                                  <li><a class="dropdown-item" href="./About_US/">About Us</a></li>
+                                  <li><a class="dropdown-item" href="./overview/">Overview</a></li>
+                                  <li><a class="dropdown-item" href="./careers/">Careers</a></li>
+                                  <li><a class="dropdown-item" href="./contact/">Contact</a></li>
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                  <a class="dropdown-item" href="./executive/" style="padding: 0; display: inline !important;">Our People</a>
+                                  <ul class="dropdown-submenu" style="list-style-type: none; padding: 0; font-size: small;">
+                                      <li class="my-2"><a href="./executive/">Executive Staff</a></li>
+                                      <li class="my-2"><a href="./board/">Board of Directors</a></li>
+                                      <li class="my-2"><a href="./development">Development Advisory Council</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </ul>
+                      
+                        
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      What We Do    
+                    </a>
+                    <ul class="dropdown-menu" style="padding-right: none !important;">  
+                      <div class="d-sm-none d-md-flex col-md-10" style="color: #8BC34A;">
+                          <div class="col-md-6 col-sm-12">
+                              <li style="border-bottom: none !important;">
+                                <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Work</a>
+                                <ul class="sec" >
+                                  <li><a href="" class="dropdown-item">Regions</a></li>
+                                  <li><a href="" class="dropdown-item">Sectors</a></li>
+                                  <li><a href="./initiate" class="dropdown-item">Initiatives</a></li>
+                                </ul>
+                              
+                              </li>
+                              <!-- <li><a class="dropdown-item" href="#">Overview</a></li>
+                              <li><a class="dropdown-item" href="#">Careers</a></li>
+                              <li><a class="dropdown-item" href="">Contact</a></li> -->
+                          </div>
+                          <div class="col-md-6 col-sm-12 aa">
+                              <a class="dropdown-item col-md-2" href="#" style="padding: 0; display: inline !important;">Active Projects</a>
+                              <a href="" class="dropdown-item col-md-2" style="padding: 0; display: inline !important;">Investment Stories</a>
+                              <!-- <ul class="dropdown-submenu" style="list-style-type: none; padding: 0; font-size: small;">
+                                  <li class="my-2"><a href="">Executive Staff</a></li>
+                                  <li class="my-2"><a href="">Board of Directors</a></li>
+                                  <li class="my-2"><a href="">Development Advisory Council</a></li>
+                              </ul> -->
+                          </div>
+                      </div>
+                  </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      What We Offer
+                    </a>
+                    <ul class="dropdown-menu">  
+                      <div class="d-md-flex " style="color: #8BC34A; justify-content: space-evenly;">
+                        <div class="col-md-6">
+                          <li style="border-bottom: none !important;" >
+                            <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Products</a>
+                            <ul class="sec"style="list-style-type:none ;  font-size: small !important; ">
+                              <li class="first">
+                                <a href="/what-we-offer/our-products/debt-financing" data-drupal-link-system-path="node/166" class="dropdown-item">Debt Financing</a>
+                            </li>
+                            <li class="first">
+                                <a href="/what-we-offer/our-products/equity-investments" data-drupal-link-system-path="node/161" class="dropdown-item">Equity Investments</a>
+                            </li>
+                            <li class="first">
+                                <a href="./" data-drupal-link-system-path="node/5266" class="dropdown-item">Investment Funds</a>
+                            </li>
+                            <li class="first">
+                                <a href="/what-we-offer/our-products/technical-assistance-feasibility-studies" data-drupal-link-system-path="node/1266" class="dropdown-item">Feasibility Studies</a>
+                            </li>
+                            <li class="first">
+                                <a href="/what-we-offer/our-products/political-risk-insurance" data-drupal-link-system-path="node/156" class="dropdown-item">Political Risk Insurance</a>
+                            </li>
+                            <li class="first">
+                                <a href="/what-we-offer/our-products/technical-assistance-feasibility-studies" data-drupal-link-system-path="node/1266" class="dropdown-item">Technical Assistance</a>
+                            </li>
+                            
+                            </ul>
+                          
+                          </li>
+                        </div>
+                        <div class="col-md-6">
+                          <li style="border-bottom: none !important;" >
+                            <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Work With us</a>
+                            <ul class="sec"style="list-style-type:none ;  font-size: small !important;">
+                              <li class="first">
+                                <a href="/what-we-offer/our-products/debt-financing" data-drupal-link-system-path="node/166" class="dropdown-item">Where We Work</a>
+                            </li>
+                            <li class="first">
+                                <a href="/what-we-offer/our-products/equity-investments" data-drupal-link-system-path="node/161" class="dropdown-item">Investment Policies</a>
+                            </li>
+                            <li class="first">
+                                <a href="./eligibility/" data-drupal-link-system-path="node/5266" class="dropdown-item">Eligibility CheckList</a>
+                            </li>
+                            <li class="first">
+                              <a href="./apply/" style="font-size: larger;
+                              font-weight: 100;
+                              text-align: center;" data-drupal-link-system-path="node/5266" class="dropdown-item">Apply</a>
+                          </li>
+                                                    
+                            </ul>
+                      
+                          </li>
+                        </div>
+                        <!-- <div class="col-md-4">
+                          <li style="border-bottom: none !important;">
+                            <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Work</a>
+                            <ul class="sec" >
+                              <li><a href="" class="dropdown-item">Regions</a></li>
+                              <li><a href="" class="dropdown-item">Sectors</a></li>
+                              <li><a href="" class="dropdown-item">Initiatives</a></li>
+                            </ul>
+                          
+                          </li>
+                        </div> -->
+                        <!-- <div class="col-md-4">
+                          <li style="border-bottom: none !important;">
+                            <a style="border-bottom: 1px solid #8BC34A;margin: 10px;display: inline" class="dropdown-item" href="#">Our Work</a>
+                            <ul class="sec" >
+                              <li><a href="" class="dropdown-item">Regions</a></li>
+                              <li><a href="" class="dropdown-item">Sectors</a></li>
+                              <li><a href="" class="dropdown-item">Initiatives</a></li>
+                            </ul>
+                          
+                          </li>
+                         </div> -->
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Our Impact
+                    </a>
+                    <ul class="dropdown-menu" >  
+                      <div class="d-md-flex" style="color: #8BC34A;">
+                        <div class="col-md-6">
+                          <li><a class="dropdown-item" href="#">About Us</a></li>
+                          <li><a class="dropdown-item" href="#">Overview</a></li>
+                          <li><a class="dropdown-item" href="#">Careers</a></li>
+                          <li><a class="dropdown-item" href="">Contact</a></li>
+                        </div>
+                        <div class="col-md-6">
+                          <a class="dropdown-item" href="#" style="padding:0;">Action</a>
+                              <ul style="list-style-type: none;padding: 0;font-size: small;">
+                                 <li class="my-2"><a href="">Executive Staff</a></li>
+                                <li class="my-2"><a href="">Board of Directors</a></li>
+                                <li  class="my-2"><a href="">Development Advisory Council</a></li>
+                              </ul>
+                         </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Media
+                    </a>
+                    <ul class="dropdown-menu" style="width:50% !important;">   
+                      <div class="d-md-flex" style="color: #8BC34A;">
+                        <div class="col-md-6" style="font-size: medium !important;">
+                          <li><a class="dropdown-item" href="#">Newsroom </a></li>
+                          <li><a class="dropdown-item" href="#">In the News</a></li>
+                          <li><a class="dropdown-item" href="#">Speeches & <br>Testimony</a></li>
+                          <!-- <li><a class="dropdown-item" href="">Contact</a></li> -->
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+   
+        <!-- video -->
+        <header class="outer-container">
+          <div class="video-container">
+              <video src="../BMR SCHEME FOR RICE MILLS IN SINDH  YouTube720p.mp4" autoplay loop muted></video>
+          </div>
+          <div class="overlay"></div>
+          <div class="scrolling-content  col-md-5">
+              <h1 class="gradient-text  reveal" style="font-size:xxx-large !important;">Initiatives</h1>
+              <!-- <h3 class="gradient-text1  reveal" style="margin-bottom: 2rem;">We're financing solutions to the most critical challenges facing the developing world today.</h3> -->
+              <a class="my-4 le  reveal" href="#">Learn More</a>
+          </div>
+        </header>
+        <!-- brand-carousel -->
+        <section style="padding-top: 2rem;">
+          <div>
+            <h1 class="gradient-text text-center" style="background-image:linear-gradient(45deg, #009688, #4CAF50, #009688, #4CAF50) !important;">OUR PARTNERS</h1>
+            <div class="logos">
+              <div class="logos-slide">
+                <img src="../images/B1.jpeg" alt="">
+                <img src="../images/B2.jpeg" alt="">
+                <img src="../images/B3.jpeg" alt="">
+                <img src="../images/B4.jpeg" alt="">
+                <img src="../images/B5.jpeg" alt="">
+                <img src="../images/B6.png" alt="">
+                <img src="../images/B7.jpeg" alt="">
+                <img src="../images/B8.jpeg" alt="">
+                <img src="../images/B9.jpeg" alt="">
+                <img src="../images/B10.jpeg" alt="">
+                <img src="../images/B11.jpeg" alt="">
+                <img src="../images/B12.jpeg" alt="">
+                <img src="../images/B13.jpeg" alt="">
+                <img src="../images/B14.jpeg" alt="">
+                <img src="../images/B15.jpeg" alt="">
+             </div>
+             <div class="logos-slide">
+              <img src="../images/B1.jpeg" alt="">
+                <img src="../images/B2.jpeg" alt="">
+                <img src="../images/B3.jpeg" alt="">
+                <img src="../images/B4.jpeg" alt="">
+                <img src="../images/B5.jpeg" alt="">
+                <img src="../images/B6.png" alt="">
+                <img src="../images/B7.jpeg" alt="">
+                <img src="../images/B8.jpeg" alt="">
+                <img src="../images/B9.jpeg" alt="">
+                <img src="../images/B10.jpeg" alt="">
+                <img src="../images/B11.jpeg" alt="">
+                <img src="../images/B12.jpeg" alt="">
+                <img src="../images/B13.jpeg" alt="">
+                <img src="../images/B14.jpeg" alt="">
+                <img src="../images/B15.jpeg" alt="">
+           </div>
+           </div>
+          </div>
+        </section>
+        <!-- offer -->
+        <section class="offer">
+            <div class="one" style="text-align: center;">
+                <div class="text-center my-4">
+                  <h1>What We Offer</h1>
+                </div>
+                <div class="d-lg-flex flex-wrap">
+                  <div class="col-md-2 my-3 animate-on-scroll1">
+                      <div>
+                        <img src="./images/debt.png" class="img-fluid" alt="">
+                      </div>
+                        <a href="">Debt Relief<br> Program (DRP)</a>
+                    </div>
+                <div class="col-md-2 my-3 animate-on-scroll2">
+                      <div>
+                        <img src="./images/equity.png" class="img-fluid" alt="">
+                      </div>
+                      <a href="">Equity<br> Investments</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll3">
+                    <div>
+                      <img src="./images/funds.png" class="img-fluid" alt="">
+                    </div>
+                      <a href="">Feasibility<br> Studies</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll4">
+                  <div>
+                    <img src="./images/political.png" class="img-fluid" alt="">
+                  </div>
+                    <a href="">Investment<br> Funds</a>
+                  </div>
+                <div class="col-md-2 my-3 animate-on-scroll5">
+                <div>
+                  <img src="./images/study.png" class="img-fluid" alt="">
+                </div>
+                <a href="">Political<br> Risk</a>  
+                </div>
+                <div class="col-md-2 my-3 animate-on-scroll6">
+              <div>
+                <img src="./images/technical.png" class="img-fluid" alt="">
+              </div>
+              <a href="">Technical<br> Assistance</a>
+              </div>
+              </div>
+           </div>
+        </section>
+        <!-- impact -->
+        <section class="impact">
+          <div class="flex-wrap text-center">
+              <div class="zero">
+                <h1>Our Impact</h1>
+              </div>
+              <div class="d-flex flex-wrap" style="justify-content: center; align-items: center;">
+                <div class="one col-md-3 ">
+                  <img src="./images/quity_files/Green-World.gif" alt="">
+              </div>
+              
+                <div class="two col-md-4 "> 
+                  <p class="animate-on-scrollL"><span class="amount"><strong>$36.45&nbsp;billion</strong>   total<br>
+                    portfolio exposure in<br>
+                    over <strong>110&nbsp;countries</strong></span></p>
+                </div>
+                <div class="three col-md-4">
+                  <p class="animate-on-scrollB"> <strong>$7.4&nbsp;billion</strong> committed<br>
+                    across <strong>183&nbsp;transactions</strong><br>
+                    in Fiscal Year 2022</p>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!-- priorities -->
+        <section class="priority">
+          <div class="flex-wrap text-center" style="margin-top:3rem;">
+            <div>
+              <h1 class="gradient-text">Priorities</h1>
+            </div>
+            <div>
+              <div class="d-flex flex-wrap justify-content-center col-md-12">
+                <div class="food  animate-on-scrollb my-3 col-md-3 mx-2 text-center align-items-center">
+                  <h2 class="col-md-12">Increasing Food Security</h2>
+                </div>
+                <div class="infra animate-on-scrollb my-3 col-md-3 mx-2 text-center align-items-center">
+                  <h2  class="col-md-12">Building Critical Infrastructure</h2>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="health animate-on-scrollt1 my-3 col-md-3 mx-2 text-center align-items-center">
+                  <h2  class="col-md-12">Advancing Global Health</h2>
+                </div>
+                <div class="connect animate-on-scrollt2 my-3 col-md-3 mx-2 text-center align-items-center">
+                  <h2  class="col-md-12">Bolstering Connectivity</h2>
+                </div>
+              </div>
+              <div>
+                <a href="">VIEW SID PROJECT DATA</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- slider -->
+        <section class="slider">
+          <div class="d-flex flex-wrap col-md-12" style="padding: 2rem;">         
+            <div class="col-md-6 con">
+                <div class="text-left">
+                  <h2>Cities in Sindh</h2>
+                </div>
+                <div id="karachi-content" class="slide-content">
+                  <h1>Karachi</h1>
+                  <p>2.6 times higher per capita income than National average</p>
+                  <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…                  </p>
+                <div class="counter-container">
+                  <div class="counter col-md-2">
+                    <span class="number" id="gsdp">0</span>Bn
+                    <p>GSDP, Current price 
+                      (2021-22 est.)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="growthRate">0</span>%
+                    <p> Projected Growth Rate </p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="perCapitaIncome">0</span>
+                    <p>Per capita income,
+                      Current price (2021-22)                    
+                      </p>   
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="fdiInflows">0</span> Bn 
+                    <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <div class="d-flex">
+                    <img src="./images/kara.avif" class="img-fluid img-scaling" style="  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+                    <div class="mx-3">
+                      <h6>State Lead</h6>
+                      <h4><b>Jamil Shakir</b></h4>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <div id="hyderabad-content" class="slide-content">
+                <h1>Hyderabad</h1>
+                <p>2.6 times higher per capita income than National average</p>
+                <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest-growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…</p>
+                <div class="counter-container">
+                  <div class="counter col-md-2">
+                    <span class="number" id="gsdp-hyderabad">0</span>Bn
+                    <p>GSDP, Current price (2021-22 est.)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="growthRate-hyderabad">0</span>%
+                    <p>Projected Growth Rate</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="perCapitaIncome-hyderabad">0</span>
+                    <p>Per capita income, Current price (2021-22)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="fdiInflows-hyderabad">0</span>Bn
+                    <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <div class="d-flex">
+                    <img src="./images/kara.avif" class="img-fluid img-scaling" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+                    <div class="mx-3">
+                      <h6>State Lead</h6>
+                      <h4><b>Jamil Shakir</b></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="larkana-content" class="slide-content">
+                <h1>Larkana</h1>
+                <p>2.6 times higher per capita income than National average</p>
+                <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest-growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…</p>
+                <div class="counter-container">
+                  <div class="counter col-md-2">
+                    <span class="number" id="gsdp-larkana">0</span>Bn
+                    <p>GSDP, Current price (2021-22 est.)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="growthRate-larkana">0</span>%
+                    <p>Projected Growth Rate</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="perCapitaIncome-larkana">0</span>
+                    <p>Per capita income, Current price (2021-22)</p>
+                  </div>
+                  <div class="counter col-md-2">
+                    <span class="number" id="fdiInflows-larkana">0</span>Bn
+                    <p>FDI inflow (Oct 2019 - Mar 2023)</p>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <div class="d-flex">
+                    <img src="./images/kara.avif" class="img-fluid img-scaling" style="box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+                    <div class="mx-3">
+                      <h6>State Lead</h6>
+                      <h4><b>Jamil Shakir</b></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Repeat the above structure for other content sections with correct IDs -->
+              
+           <div id="sukkur-content" class="slide-content">
+            <h1>sukkur</h1>
+            <p>2.6 times higher per capita income than National average</p>
+            <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…                  </p>
+          <div class="counter-container">
+            <div class="counter col-md-2">
+              <span class="number" id="gsdp">0</span>Bn
+              <p>GSDP, Current price 
+                (2021-22 est.)</p>
+            </div>
+            <div class="counter col-md-2">
+              <span class="number" id="growthRate">0</span>%
+              <p> Projected Growth Rate </p>
+            </div>
+            <div class="counter col-md-2">
+              <span class="number" id="perCapitaIncome">0</span>
+              <p>Per capita income,
+                Current price (2021-22)                    
+                </p>   
+            </div>
+            <div class="counter col-md-2">
+              <span class="number" id="fdiInflows">0</span> Bn 
+              <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+            </div>
+          </div>
+          <div class="text-left">
+            <div class="d-flex">
+              <img src="./images/kara.avif" class="img-fluid img-scaling" style="  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+              <div class="mx-3">
+                <h6>State Lead</h6>
+                <h4><b>Jamil Shakir</b></h4>
+              </div>
+            </div>
+          </div>
+         </div> 
+         <div id="nawabshah-content" class="slide-content">
+          <h1>nawabshah</h1>
+          <p>2.6 times higher per capita income than National average</p>
+          <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…                  </p>
+        <div class="counter-container">
+          <div class="counter col-md-2">
+            <span class="number" id="gsdp">0</span>Bn
+            <p>GSDP, Current price 
+              (2021-22 est.)</p>
+          </div>
+          <div class="counter col-md-2">
+            <span class="number" id="growthRate">0</span>%
+            <p> Projected Growth Rate </p>
+          </div>
+          <div class="counter col-md-2">
+            <span class="number" id="perCapitaIncome">0</span>
+            <p>Per capita income,
+              Current price (2021-22)                    
+              </p>   
+          </div>
+          <div class="counter col-md-2">
+            <span class="number" id="fdiInflows">0</span> Bn 
+            <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+          </div>
+        </div>
+        <div class="text-left">
+          <div class="d-flex">
+            <img src="./images/kara.avif" class="img-fluid img-scaling" style="  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+            <div class="mx-3">
+              <h6>State Lead</h6>
+              <h4><b>Jamil Shakir</b></h4>
+            </div>
+          </div>
+        </div>
+       </div> 
+       <div id="shikarpur-content" class="slide-content">
+        <h1>shikarpur</h1>
+        <p>2.6 times higher per capita income than National average</p>
+        <p>Gujarat is the 2nd largest producer of crude oil (onshore) and natural gas in India. One of India's fastest growing states during 2013-17, Gujarat ranked #4 in Ease of Doing…                  </p>
+      <div class="counter-container">
+        <div class="counter col-md-2">
+          <span class="number" id="gsdp">0</span>Bn
+          <p>GSDP, Current price 
+            (2021-22 est.)</p>
+        </div>
+        <div class="counter col-md-2">
+          <span class="number" id="growthRate">0</span>%
+          <p> Projected Growth Rate </p>
+        </div>
+        <div class="counter col-md-2">
+          <span class="number" id="perCapitaIncome">0</span>
+          <p>Per capita income,
+            Current price (2021-22)                    
+            </p>   
+        </div>
+        <div class="counter col-md-2">
+          <span class="number" id="fdiInflows">0</span> Bn 
+          <p>FDI inflow (Oct 2019 -Mar 2023)</p>
+        </div>
+      </div>
+      <div class="text-left">
+        <div class="d-flex">
+          <img src="./images/kara.avif" class="img-fluid img-scaling" style="  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);" alt="">
+          <div class="mx-3">
+            <h6>State Lead</h6>
+            <h4><b>Jamil Shakir</b></h4>
+          </div>
+        </div>
+      </div>
+     </div> 
+     
+                
+            </div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide col-md-6">
+              <div class="carousel-indicators d-none d-sm-block text-center">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="slide1" data-bs-interval="10000">
+                  <img src="./images/k1.avif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide2" data-bs-interval="2000">
+                  <img src="./images/hyder(pakkaqila).jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide3">
+                  <img src="./images/sukkur.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide4">
+                  <img src="./images/jacobad.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide5">
+                  <img src="./images/shikarpur.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide6">
+                  <img src="./images/kotri.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          
+          
+          
+          
+         </section>
+        <!-- ui -->
+        <section class="good">
+          <div class="d-flex flex-wrap col-md-12">
+            <div class="col-md-8 zero">
+              <h2 class="gradient-text">Do good, do well.</h2>
+              <h2>Invest in Sindh</h2>
+              <p><b>Many people believe that investing in good means you won't do well. But in New Zealand, doing good and doing well is what we've always done successfully.</b></p>
+              <p>We're a country that prides itself on letting our good values guide our behaviour and business is no different.</p>
+              <p>We believe that good business stems from caring for our land and our planet. That business done with integrity leads to better outcomes for everyone. That being bold creates more ambitious and impactful business results. And that respecting and learning from our culture can create economically stronger and more inclusive business opportunities.</p>
+              <p>Good values sit at the heart of how we do business and this has become a competitive advantage for us. By investing in good, we're showing the world what's possible.</p>
+              <p>So if you want to do well, invest in good - invest in New Zealand.
+              </p>
+            </div>
+            <div class="col-md-4 one">
+              <div class="link col-md-12 animate-on-scrollpl ">
+                  <div class="col-md-9 first">
+                    <div class="border col-md-12 d-flex">
+                      <a href="" class="col-md-10">Connect to opportunities on live deals
+                          </a>
+                      <i class="fa-solid fa-arrow-right col-md-2" style="color: #ffffff;"></i>
+                    </div>
+                  </div>
+                  
+              </div>
+              <div class="link col-md-12  animate-on-scrollpl ">
+                <div class="col-md-9 first">
+                  <div class="border col-md-12 d-flex">
+                    <a href="" class="col-md-10">Connect to opportunities on live deals
+                        </a>
+                    <i class="fa-solid fa-arrow-right col-md-2" style="color: #ffffff;"></i>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="link col-md-12 animate-on-scrollpl ">
+              <div class="col-md-9 first">
+                <div class="border col-md-12 d-flex">
+                  <a href="" class="col-md-10">Connect to opportunities on live deals
+                      </a>
+                  <i class="fa-solid fa-arrow-right col-md-2" style="color: #ffffff;"></i>
+                </div>
+              </div>
+              
+          </div>
+          <div class="link col-md-12  animate-on-scrollpl ">
+            <div class="col-md-9 first">
+              <div class="border col-md-12 d-flex">
+                <a href="" class="col-md-10">Connect to opportunities on live deals
+                    </a>
+                <i class="fa-solid fa-arrow-right col-md-2" style="color: #ffffff;"></i>
+              </div>
+            </div>
+            
+        </div>
+        <div class="link col-md-12 animate-on-scrollpl ">
+          <div class="col-md-9 first">
+            <div class="border col-md-12 d-flex">
+              <a href="" class="col-md-10">Connect to opportunities on live deals
+                  </a>
+              <i class="fa-solid fa-arrow-right col-md-2" style="color: #ffffff;"></i>
+            </div>
+          </div>
+          
+      </div>
+            </div>
+          </div>
+        </section>
+        <!-- news -->
+        <!-- <section class="news"> -->
+          <section class="good">
+            <div class="d-flex flex-wrap col-md-12">
+              <div class="col-md-8 zero">
+                <h2 class="gradient-text">Invest and grow with us</h2>
+                <!-- <h2>Invest in Sindh</h2> -->
+                <p><b>Many people believe that investing in good means you won't do well. But in New Zealand, doing good and doing well is what we've always done successfully.</b></p>
+                <p>We're a country that prides itself on letting our good values guide our behaviour and business is no different.</p>
+                <p>We believe that good business stems from caring for our land and our planet. That business done with integrity leads to better outcomes for everyone. That being bold creates more ambitious and impactful business results. And that respecting and learning from our culture can create economically stronger and more inclusive business opportunities.</p>
+                <!-- <p>Good values sit at the heart of how we do business and this has become a competitive advantage for us. By investing in good, we're showing the world what's possible.</p> -->
+                <p>So if you want to do well, invest in good - invest in New Zealand.
+                </p>
+              </div>
+              <div class="col-md-4 one">
+                <h2>Latest from Sindh Investement</h2>
+                <div class="col-md-12 animate-on-scrollpt">
+                  <div class="col-md-12 d-flex hh my-4">
+                    <div class="image col-md-2 mx-1">
+                      <img   src="./images1/1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text mx-1 gradient-text3" >
+                       Opporunity for Pakistan to become International Data Center hub
+                    </div>
+                  </div>
+                </div>
+         
+                  <div class="col-md-12 d-flex hh my-4 animate-on-scrollpt">
+                    <div class="image col-md-2 mx-1">
+                      <img   src="./images1/2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text mx-1 gradient-text3" >
+                       Opporunity for Pakistan to become International Data Center hub
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 d-flex hh my-4 animate-on-scrollpt">
+                    <div class="image col-md-2 mx-1">
+                      <img   src="./images1/3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text mx-1 gradient-text3" >
+                       Opporunity for Pakistan to become International Data Center hub
+                    </div>
+                  </div>
+                  <div class="col-md-12 d-flex hh my-4 animate-on-scrollpt">
+                    <div class="image col-md-2 mx-1">
+                      <img   src="./images1/4.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="text mx-1 gradient-text3" >
+                       Opporunity for Pakistan to become International Data Center hub
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        
+        <!-- </section> -->
+  
+        <!-- footer -->
+        <footer class="foot">
+          <div class="col-md-12">
+            <div class="col-md-12 d-flex flex-wrap" style="justify-content: center; padding:1rem 2rem 0rem 2rem;">
+              <img src="../images/logo-sid.png" class="col-md-3" alt="">
+              <div class="align-items-center  col-md-7 text-left" style="padding:2rem;">
+                <h6>Send us an enquiry:</h6>
+                <a href="mailto:investmentenquiry@gos.pk">investmentenquiry@gos.pk</a>
+              </div>
+              <div class="icons">
+                <ul class="social-icons flex-wrap">
+                  <li>
+                      <a href="https://www.sedf.gos.pk/" >
+                          <i class="fas fa-globe"></i> <!-- Website Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a href="mailto:info@sedf.gos.pk">
+                          <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/SindhEnterpriseDevelopmentFund/" >
+                          <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.linkedin.com/company/sindh-enterprise-development-fund/" >
+                          <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                      </a>
+                  </li>
+                  <li>
+                      <a href="www.twitter.com/SEDFofficial" >
+                          <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                      </a>
+                  </li>
+                  <li>
+                    <a href="https://youtube.com/@sindhenterprisedevelopment6485?si=vmM4LGofuiOvRVza">
+                        <i class="fab fa-youtube"></i> <!-- Twitter Icon -->
+                    </a>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex flex-wrap" style="align-items: center;justify-content: center;padding: 0rem 0rem 1rem 0rem;">
+              <p class="col-md-3" style="text-align: left;
+              padding: 10px">2023 Sindh Investment Government. All rights reserved.</p>
+              <div class="col-md-7">
+                <ul class="d-flex" style="list-style-type: none;color: white;list-style-type: none;justify-content: center;">
+                  <li class="mx-3">Sitemap</li>
+                  <li class="mx-3">Privacy Policy</li>
+                  <li class="mx-3">Terms of Use & Engagement</li>
+                </ul>
+              </div>
+              <div class="col-md-1">
+                <img src="../images/goslogo.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </footer>
+
+<!--  -->
+      </div>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+      </script>
+   
+   
+   <!--  -->
+   
+   <script>
+      // Function to animate a numeric element
+      function animateValue(id, start, end, duration) {
+        var range = end - start;
+        var current = start;
+        var increment = range / (duration / 1000);
+        var element = document.getElementById(id);
+        var timer = setInterval(function () {
+          current += increment;
+          element.textContent = current.toFixed(2); // Adjust the number of decimal places as needed
+          if (current >= end) {
+            clearInterval(timer);
+            element.textContent = end.toFixed(2); // Ensure the final value is exact
+          }
+        }, 1000); // Update every second (adjust as needed)
+      }
+    
+      // Animate values when the page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        // Animate values for Hyderabad
+        animateValue('gsdp-hyderabad', 0, 50, 5); // Example values, adjust as needed
+        animateValue('growthRate-hyderabad', 0, 5, 5); // Example values, adjust as needed
+        animateValue('perCapitaIncome-hyderabad', 0, 1000, 5); // Example values, adjust as needed
+        animateValue('fdiInflows-hyderabad', 0, 20, 5); // Example values, adjust as needed
+    
+        // Repeat the above for other content sections, changing the IDs and values accordingly
+        animateValue('gsdp-larkana', 0, 60, 5);
+        animateValue('growthRate-larkana', 0, 4, 5);
+        animateValue('perCapitaIncome-larkana', 0, 900, 5);
+        animateValue('fdiInflows-larkana', 0, 15, 5);
+    
+        // Repeat for other content sections...
+      });
+    </script>
+    
+           <!--  -->
+<script>
+      // Define slideToContentMap outside of the event handler
+      var slideToContentMap = {
+        'slide1': 'karachi-content',
+        'slide2': 'hyderabad-content',
+        'slide3': 'larkana-content',
+        'slide4': 'sukkur-content',
+        'slide5': 'nawabshah-content',
+        'slide6': 'shikarpur-content',
+      };
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the carousel element
+        var carousel = document.getElementById('carouselExampleDark');
+    
+        // Add an event listener for when the slide changes
+        carousel.addEventListener('slid.bs.carousel', function () {
+          // Get the active slide
+          var activeSlide = document.querySelector('.carousel-item.active');
+    
+          // Hide all content by default
+          for (var contentId in slideToContentMap) {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'none';
+          }
+    
+          // Determine which slide is active and show the corresponding content
+          var activeSlideId = activeSlide.id;
+          var activeContentId = slideToContentMap[activeSlideId];
+    
+          if (activeContentId) {
+            document.getElementById(activeContentId).style.display = 'block';
+          }
+        });
+    
+        // Initially, hide all content except for the content of the first slide
+        for (var contentId in slideToContentMap) {
+          if (contentId === 'slide1') {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'block';
+          } else {
+            document.getElementById(slideToContentMap[contentId]).style.display = 'none';
+          }
+        }
+      });
+    </script>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-QAc08ipPd7ElgrEsKMj9mFi1LOYhEBBeusKfVSXktZSjlm5BIThey5q7IEYtZVixxC+lIN6CnSZCfI4s00Dq3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  	<script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script  src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
